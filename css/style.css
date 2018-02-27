@@ -1,0 +1,20 @@
+/* --------------- Normalize ------------------------ */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+a,
+a:hover {
+	color: #f5f5f5;
+	border-bottom: 1px solid #f5f5f5;
+	text-decoration: none;
+}
+
+html {
+    /* Settin 1rem = 10px */
+    font-size: 62.5%;
+}

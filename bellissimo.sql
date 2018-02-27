@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 27 feb 2018 om 11:46
+-- Gegenereerd op: 27 feb 2018 om 15:20
 -- Serverversie: 10.1.25-MariaDB
 -- PHP-versie: 7.1.7
 
@@ -25,19 +25,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Tabelstructuur voor tabel `password_reset_request`
---
-
-CREATE TABLE `password_reset_request` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `userId` int(10) UNSIGNED NOT NULL,
-  `date_requested` datetime NOT NULL,
-  `token` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
 -- Tabelstructuur voor tabel `users`
 --
 
@@ -48,14 +35,15 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Indexen voor geëxporteerde tabellen
+-- Gegevens worden geëxporteerd voor tabel `users`
 --
 
+INSERT INTO `users` (`id`, `email`, `paswoord`) VALUES
+(1, 'admin@admin.com', '$2y$10$.rmA5OCVoKRe/AO2tAcqrO52w5qeo08gkNOBCydC7u4yX.7J/NRP6');
+
 --
--- Indexen voor tabel `password_reset_request`
+-- Indexen voor geëxporteerde tabellen
 --
-ALTER TABLE `password_reset_request`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexen voor tabel `users`
@@ -68,15 +56,10 @@ ALTER TABLE `users`
 --
 
 --
--- AUTO_INCREMENT voor een tabel `password_reset_request`
---
-ALTER TABLE `password_reset_request`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
---
 -- AUTO_INCREMENT voor een tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT;COMMIT;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
