@@ -1,5 +1,5 @@
 <?php
-require_once '../DataBase.php';
+require_once('../DataBase.php');
 
 class ImageList{
     
@@ -18,7 +18,7 @@ class ImageList{
        
     }
     
-    public function deleteNodes($id){
+    public function deleteImage($id){
         $db = new Database();
         $sql = "DELETE FROM images WHERE id = :id";
         $db->executeWithParam($sql, array(array(':id', $id)));
