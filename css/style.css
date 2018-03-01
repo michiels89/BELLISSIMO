@@ -18,3 +18,49 @@ html {
     /* Settin 1rem = 10px */
     font-size: 62.5%;
 }
+
+
+/************************************ BUTTONS **************************************************/
+
+/* ------------------- SHARE BUTTONS ------------------------------ */
+
+.share-wrapper{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 0.2rem;
+    
+}
+
+
+/* --------------- BACK AND HOME BUTTON --------------------------- */
+
+.navigation a {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+
+    transition: all .2s;
+}
+
+.navigation a img{
+    
+        
+    border: 2px solid #bb0929;
+    border-radius: 50%;
+}
+
+
+.navigation a:active,
+.navigation a:focus {
+    transform: translateY(2px);
+}
+.back,
+.home{
+    display:inline-block;
+   
+}
+.back {
+    margin-right: 2rem;
+}
+

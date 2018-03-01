@@ -9,11 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 <!--    Open Graph to display on social media-->
-    <meta property="og:url"                content="" />
+    <meta property="og:url"                content="http://localhost/BELLISSIMO/index.php" />
     <meta property="og:type"               content="website" />
     <meta property="og:title"              content="Bellissimo Natural Beauty" />
     <meta property="og:description"        content="Laat hier uw na." />
-    <meta property="og:image"              content="http://www.yourdomain.com/image.jpg"  />
+    <meta property="og:image"              content="img/image.jpg"  />
     
 <!--    shortcut icon-->
     <link rel="shortcut icon" href="images/favico.png">
@@ -38,31 +38,120 @@
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 -->
+   <!-- IONICONS FONT -->
+    <link rel="stylesheet" href="vendors/ionicons/css/ionicons.min.css">
     
 <!--    stylesheets-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Admin View</title>
+    <title>Bellissimo</title>
 </head>
 <body>
    <header>
-    <div class="top">
-        <div class="wrapper">
-            <div class="top-container">
-<!--                <div class="site-name">Bellissimo</div>-->
-                <div class="logo"><a href="index.php" name="1"><img src="images/bellissimo.jpg"></a></div>
-                <div class="menu">
-                  <div><a class='btn btn-primary' href='index.php'>Home</a></div>  
-                  <div><a class='btn btn-primary' href='treatments.php'>Treatments</a></div>  
-                  <div><a class='btn btn-primary' href='newUser.php'>Afspraak maken</a></div>  
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
+       <div class="container">
+<!-------------------------------menu----------------------------------------------->
+           
+            <a href="index.php" name="1"><img src="img/bellissimo.jpg"></a>
+            <a class='btn btn-primary' href='index.php'>Home</a> 
+            <a class='btn btn-primary' href='treatmentView.php'>Behandelingen</a>
+            <a class='btn btn-primary' href='galery.php'>Foto galerij</a> 
+            <a class="afsprakenagenda" href="https://www.afsprakenagenda.be/1221/bellissimo-natural-beauty">Maak een afspraak</a> 
+            
+<!-------------------------------script voor pop up afspraken----------------------->
+           
+            <script type="text/javascript">
+                        (function() {
+                        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                        po.src = 'https://www.afsprakenagenda.be/button.js';
+                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                        })();
+            </script>
+        </div> 
+   </header>
    
-    
+   <main>
+<!------------------------------- Load Facebook SDK for JavaScript ----------------->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/nl_NL/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!------------------------------- Load Twitter SDK for JavaScript ------------------>     
+        <script>window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function(f) {
+        t._e.push(f);
+            };
+
+        return t;
+        }(document, "script", "twitter-wjs"));</script>
+<!------------------------------- Load Pinterest JavaScript------- ----------------->  
+        <script
+        type="text/javascript"
+        async defer
+        src="//assets.pinterest.com/js/pinit.js">
+        </script>
+          
+<!-------------------------------- Your share button code -------------------------->
+    <div class="share-wrapper">
+        <div class="fb-share-button" data-href="http://localhost/BELLISSIMO/index.php" data-layout="button" data-size="small" data-mobile-iframe="false"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.index.php%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Delen</a></div>
+        
+        <div class="fb-like" data-href="https://www.index.php" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+        
+        <div><a class="twitter-share-button"href="https://twitter.com/intent/tweet">Tweet</a></div>
+        <div><a href="https://www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"></a></div>
+    </div>   
+       
+       
+   </main>
+<?php  require_once('include/backHome.php'); ?><br><br><br><br>
+<?php  require_once('include/socialeMedia.php');?>
+
       
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
