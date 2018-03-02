@@ -1,12 +1,20 @@
 <?php
-require_once('DataBase.php');
+ 
+if (strpos($_SERVER['REQUEST_URI'],'galery') > 1) { 
+    require_once('DataBase.php');              
+} else { 
+    require_once('../DataBase.php');
+}
+            
+
+
 
 class ImageList{
     
     public function getAllImages(){
         
         $db = new DataBase();
-        $sql = "Select * from images";
+        $sql = "Select * from images order by id desc";
         $db->executeWithoutParam($sql);
         $resultSet = $db->resultset();
         $db = null;

@@ -42,7 +42,7 @@ $db =null;
     <link rel="stylesheet" href="../vendors/ionicons/css/ionicons.min.css">
     <!-- OUR STYLE FOR ADMIN -->
     <link rel="stylesheet" href="css/admin-style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<!--    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">-->
 
     <title>Bellissimo Wachtwoord vergeten</title>
 </head>

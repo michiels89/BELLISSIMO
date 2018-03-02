@@ -1,5 +1,7 @@
 <?php
 require_once('../Database.php');
+require_once('ImageList.php');
+
 // if upload button is pressed
 $msg = "";
 if(isset($_POST['upload'])){
@@ -31,11 +33,13 @@ if(isset($_POST['upload'])){
 <head>
     <meta charset="UTF-8">
     <title>Image upload</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/admin_style.css">
 </head>
 <body>
-   <div id =" content">
-       <?php   echo $msg; ?>
+   <!-------------- uploaden images --------->
+    <div id =" content">
+       <h2><?php echo $msg; ?></h2>
         <form action="uploadImages.php" method="post" enctype="multipart/form-data">
             <input type="hidden" name ="size" value="1000000">
             <div>
@@ -50,7 +54,26 @@ if(isset($_POST['upload'])){
         </form>   
     
    </div>
+    
+<!-- ----------------   images galery------------------------->
+     <div class="container">
 
+           <?php
+        $imageList = new ImageList();
+        $images = $imageList->getAllImages();
+        $i = 0;
+        foreach($images as $image){ ?>
+         
+        <div class='wrapperImg'>
+            <img class='galeryImg'src='../files/<?php print($image['image']);?>'>
+            <p><?php print($image['text'])?></p>
+        </div>
+            
+        <?php
+        }
+        
+        ?>
+    </div>
     
 </body>
 </html>
