@@ -1,5 +1,5 @@
 <?php
-require_once('../DataBase.php');
+require_once('DataBase.php');
 
 class ImageList{
     
@@ -10,11 +10,12 @@ class ImageList{
         $db->executeWithoutParam($sql);
         $resultSet = $db->resultset();
         $db = null;
-        $imageList = [];
-        foreach($resultSet as $image){
-            array_push($imageList, $image);
-        }
-        return $imageList;
+//        $imageList = [];
+//        foreach($resultSet as $image){
+//            array_push($imageList, $image);
+//        }
+//        return $imageList;
+        return $resultSet;
        
     }
     
@@ -24,17 +25,6 @@ class ImageList{
         $db->executeWithParam($sql, array(array(':id', $id)));
         $db = null;
     }
-    
-    public function addImage($id,$image, $date){
-        $db = new Database;
-        $sql = "insert into images(id,image,date) values (:id,:image,:date)";
-        $db->executeWithParam($sql,
-              array(array(':id', $id), 
-              array(':image', $image), 
-              array(':date', $date)));
-        $db=null;
-        
-    }
-    
+
 }
 

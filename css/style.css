@@ -18,6 +18,9 @@ html {
     /* Settin 1rem = 10px */
     font-size: 62.5%;
 }
+body{
+    box-sizing: border-box;
+}
 
 
 /************************************ BUTTONS **************************************************/
@@ -63,4 +66,33 @@ html {
 .back {
     margin-right: 2rem;
 }
+
+
+/**************************************GALERY*************************************/
+
+.wrapperImg{
+    width: 70rem;
+    padding: 5px;
+    margin : 1.5rem auto;
+    border: 1px solid #cbcbcb;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 2rem;
+    
+}
+.galeryImg{
+    width: 35rem;
+    height:30rem;
+    margin:auto;
+}
+/*
+#img_div img{
+    margin: 0.5rem;
+    width: 35%; 
+    min-width: 15rem;
+    height: 14rem;
+   }
+*/
+
+
 
