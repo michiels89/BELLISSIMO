@@ -55,7 +55,7 @@ if(isset($_POST['upload'])){
     
    </div>
     
-<!-- ----------------   images galery------------------------->
+<!-- ----------------   image galery------------------------->
      <div class="container">
 
            <?php
