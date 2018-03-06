@@ -20,6 +20,8 @@ html {
 }
 body{
     box-sizing: border-box;
+    width:80%;
+    margin: auto;
 }
 
 
@@ -66,8 +68,27 @@ body{
 .back {
     margin-right: 2rem;
 }
+/******************************TreatmentView**********************************/
+.wrapperTreatment{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
 
+  
+}
+.box{
+    display: inline-block;
+    color: #212121;
+    padding: 5px;
+    font-size: 100%;
+    line-height: 26px;
+    border-bottom: 2px solid black;
+}
 
+.colH{
+    
+    font-weight: bold;
+
+}
 /**************************************GALERY*************************************/
 
 .wrapperImg{

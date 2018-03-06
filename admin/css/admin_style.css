@@ -16,7 +16,7 @@ a:hover {
 body{
     box-sizing: border-box;
 }
-/************************ Setting 1rem = 10px ******************/
+/************************ Setting 1rem = 10px ***************/
 html {
     font-size: 62.5%;
 }
@@ -39,6 +39,85 @@ form div{
     
     margin-top: 0.5rem;
 }
+/***********************TREATMENTS*****************************/
+.wrapperTreatments{
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 2rem;
+    justify-content: space-between;
+    border: 2px solid red;
+    
+}
+
+.wrapperTreatments div{
+    
+   margin: 2rem auto;
+   
+}
+/*
+.wrapperTreatments:nth-child(odd) {
+    background: red;
+}
+
+.wrapperTreatments:nth-child(even) {
+    background: blue;
+}
+*/
+.box{
+    display: inline-block;
+    color: #212121;
+    padding: 5px;
+    font-size: 100%;
+    line-height: 26px;
+}
+
+.colH{
+    border-bottom: 2px solid black;
+    font-weight: bold;
+
+}
+.col1 {
+    background-color:  #F5F5F5;
+}
+.col2 {
+    background-color: #EEEEEE;
+}
+.col3 {
+    background-color: #E0E0E0;
+}
+.col4 {
+    background-color: #BDBDBD;
+}
+.col5 {
+    background-color: #9E9E9E;
+}
+
+
+/**********BUTTONS Treatments***********/
+.btnL{
+    
+    width: 30px;
+    height: 30px;
+    border: 1px solid #74b9ff;
+    background-color: transparent;
+    
+
+    padding: 0;
+    margin: 0;
+    margin-left: 0.2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.btnL i {
+    color: #74b9ff;
+}
+
+
+
+
 /************************IMAGES Galery*************************/
 
 .wrapperImg{
@@ -55,5 +134,9 @@ form div{
     width: 35rem;
     height:30rem;
     margin:auto;
+}
+#duurtijdBehandeling{
+    
+    height: 100px;
 }
 

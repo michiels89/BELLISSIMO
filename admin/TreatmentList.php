@@ -1,8 +1,8 @@
 <?php
-if (strpos($_SERVER['REQUEST_URI'],'galery') > 1) { 
-    require_once('DataBase.php');              
+if (strpos($_SERVER['REQUEST_URI'],'loggedIn') > 1) { 
+    require_once('../DataBase.php');              
 } else { 
-    require_once('../DataBase.php');
+    require_once('DataBase.php');
 }
    
 
@@ -17,4 +17,25 @@ class TreatmentList{
         return $resultSet;
     }
     
+    public function getTreatmentById($id){
+        $db = new Database();
+        $sql = "select * from treatments where id = :id";
+        $db->executeWithParam ($sql, array(array(':id', $id)));
+        $result = $db->single();
+        $db = null;
+        return $result; 
+    }
+    public function deleteTreatmentById($id){
+        $db = new Database();
+        $sql = "delete * from treatments where id = :id";
+        $db->executeWithParam($sql, array(array(':id', $id)));
+        $db = null;
+    } 
+    public function upDateTreatment($id, $naam, $omschrijving, $prijs, $duurTijd){
+        $db = new Database();
+        $sql = "update treatments set naam = :naam, omschrijving = :omschrijving, prijs = :prijs, duurTijd = :duurTijd where id = :id";
+        $db->executeWithParam ($sql, array(array(':naam', $naam), array(':omschrijving', $omschrijving), array(':prijs', $prijs), array(':duurTijd', $duurTijd)));
+        $db = null;
+        
+    }
 }
