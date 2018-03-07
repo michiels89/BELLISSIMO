@@ -24,7 +24,7 @@ if (isset($_POST['create'])) {
         if ($passwordNew !== $passwordConfirmNew) {
             $errors[] = "De ingevoerde wachtwoorden zijn niet gelijk, probeer opnieuw.";
         } else {
-            $sql = 'UPDATE users SET paswoord = :password WHERE ID = :id';
+            $sql = 'UPDATE users SET paswoord = :password WHERE id = :id';
             $db->executeWithParam($sql, array(array(':password', password_hash($passwordConfirmNew, PASSWORD_BCRYPT)), array(':id', $_SESSION['user_id_reset_pass'])));
             $db = null;
             require_once 'logout.php';
@@ -41,7 +41,7 @@ if (isset($_POST['create'])) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/admin-style.css">
+    <link rel="stylesheet" href="css/admin_style.css">
 </head>
 <body>
 <br><br>

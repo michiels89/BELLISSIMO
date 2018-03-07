@@ -33,7 +33,7 @@ if (isset($_POST['change'])) {
         $resultSet = $db->single();
 
         //5. Check if current
-        if (!password_verify($password, $resultSet['password'])) {
+        if (!password_verify($password, $resultSet['paswoord'])) {
             $errors[] = "Huidig wachtwoord voor  " . $email . " is niet correct";
         }
 
@@ -46,7 +46,11 @@ if (isset($_POST['change'])) {
                 $sql = 'UPDATE users SET paswoord = :password WHERE email = :email';
                 $db->executeWithParam($sql, array(array(':password', password_hash($passwordConfirmNew, PASSWORD_BCRYPT)), array(':email', $_SESSION['email'])));
                 $db = null;
-                require_once 'logout.php';
+                echo "<script>
+                window.alert('Wachtwoord succesvol opgeslagen');
+                window.location.href='logout.php';
+                </script>";
+
 
             }
         }
@@ -63,7 +67,7 @@ if (isset($_POST['change'])) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-          <link rel="stylesheet" href="css/admin-style.css">
+          <link rel="stylesheet" href="css/admin_style.css">
 </head>
 <!-- Including header -->
 <?php require_once('include/header.php');

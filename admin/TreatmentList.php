@@ -31,10 +31,10 @@ class TreatmentList{
         $db->executeWithParam($sql, array(array(':id', $id)));
         $db = null;
     } 
-    public function upDateTreatment($id, $naam, $omschrijving, $prijs, $duurTijd){
+    public function upDateTreatment($id, $naam, $omschrijving, $prijs, $duurTijdUur, $duurTijdMin){
         $db = new Database();
         $sql = "update treatments set naam = :naam, omschrijving = :omschrijving, prijs = :prijs, duurTijd = :duurTijd where id = :id";
-        $db->executeWithParam ($sql, array(array(':naam', $naam), array(':omschrijving', $omschrijving), array(':prijs', $prijs), array(':duurTijd', $duurTijd)));
+        $db->executeWithParam ($sql, array(array(':naam', $naam), array(':omschrijving', $omschrijving), array(':prijs', $prijs), array(':duurTijdUur', $duurTijdUur), array(':duurTijdMin', $duurTijdMin)));
         $db = null;
         
     }

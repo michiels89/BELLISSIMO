@@ -37,6 +37,7 @@ if(isset($_POST['upload'])){
     <link rel="stylesheet" href="css/admin_style.css">
 </head>
 <body>
+  <?php require_once('include/menu.php');?>
    <!-------------- uploaden images --------->
     <div id =" content">
        <h2><?php echo $msg; ?></h2>

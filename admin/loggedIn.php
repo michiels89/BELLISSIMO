@@ -22,22 +22,24 @@ if (!isset($_SESSION['email'])) {
     <link rel="stylesheet" href="ionicons/css/ionicons.min.css">
 </head>
 <body>
+   <?php require_once('include/menu.php');?>
     <h1>Behandelingen</h1>
-       <div>Behandeling toevoegen: <a class="btn btn-primary btnL" href="addTreatment.php?action=add"><i class="ion-plus-round"></i></a></div>
-        <div class="wrapperTreatments">
+       <div>Behandeling toevoegen: 
+         <a class="btn btn-primary btnL" href="addTreatment.php?action=add"><i class="ion-plus-round"></i></a></div>
+          <div class="wrapperTreatments text-center">
        
         <?php
             $treat = new TreatmentList();
             $treatList = $treat->getAllTreatments();
             foreach($treatList as $treatment){
             
-           $duurtijd =$treatment['duurTijd'];?> 
+           $duurtijd =$treatment['duurTijdUur'] . "u" . $treatment['duurTijdMin'] . "m";?> 
               
             <div><?=$treatment['id'];?></div>
             <div><?=$treatment['naam'];?></div>
             <div><?=$treatment['omschrijving'];?></div>
             <div><?=$treatment['prijs'];?></div>
-            <div><?=date($duurtijd);?></div>
+            <div><?=$duurtijd;?></div>
             <div><a class="btn btn-primary btnL"href="addTreatment.php?action=replace&id=<?=$treatment['id'];?>"><i class="ion-edit"></i></a></div>
             <div><a class="btn btn-primary btnL" href="loggedIn.php"><i class="ion-close-round"></i></a></div>
             

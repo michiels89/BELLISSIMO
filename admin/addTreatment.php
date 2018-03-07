@@ -1,14 +1,25 @@
+
 <?php
-require_once('TreatmentList.php');
-$treatL = new TreatmentList();
-
-
-if(isset($_GET['action']) && $_GET['action'] == 'add'){
-    
-    
+if (!isset($_SESSION)) {
+    session_start();
 }
 
+// Check if user is logged in
+if (!isset($_SESSION['email'])) {
+    header("Location:index.php");
+}
+
+//require_once('TreatmentList.php');
+//$treatL = new TreatmentList();
+//
+//
+//if(isset($_GET['action']) && $_GET['action'] == 'add'){
+//    
+//    
+//}
+
 ?>
+
 
 
 <!DOCTYPE html>
@@ -20,6 +31,7 @@ if(isset($_GET['action']) && $_GET['action'] == 'add'){
     <link rel="stylesheet" href="css/admin_style.css">
 </head>
 <body>
+   <?php require_once('include/menu.php');?>
     <h2 class="text-center">Behandelingen toevoegen</h2>
     <div class="container">
         <div class="row">

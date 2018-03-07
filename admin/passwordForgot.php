@@ -15,9 +15,9 @@ $passwordRequestId = isset($_GET['id']) ? trim($_GET['id']) : '';
 //make sure that the GET variables we received belong to
 //a valid forgot password request.
 
-$insertSql = "SELECT ID, user_ID, date_requested 
+$insertSql = "SELECT id, userId, date_requested 
               FROM password_reset_request
-              WHERE user_ID = :user_id AND token = :token AND ID = :id";
+              WHERE userId = :user_id AND token = :token AND id = :id";
 
 //Prepare our INSERT SQL statement.
 //Execute the statement using the variables we received.

@@ -21,6 +21,13 @@ html {
     font-size: 62.5%;
 }
 
+/************************MENU****************************/
+
+
+.header div{
+    display:inline-block;
+}
+
 /**********************Upload Form **************************/
 
 #content{
@@ -49,11 +56,7 @@ form div{
     
 }
 
-.wrapperTreatments div{
-    
-   margin: 2rem auto;
-   
-}
+
 /*
 .wrapperTreatments:nth-child(odd) {
     background: red;

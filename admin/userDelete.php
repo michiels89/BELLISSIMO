@@ -12,7 +12,7 @@ if (!isset($_SESSION['email'])) {
 
 if (isset($_GET['delete'])) {
     $db = new Database();
-    $sql = "DELETE FROM users WHERE ID = :id";
+    $sql = "DELETE FROM users WHERE id = :id";
     $db->executeWithParam($sql, array(array(':id', $_GET['delete'])));
     $db = null;
 }
@@ -22,7 +22,7 @@ if (isset($_GET['delete'])) {
 $db = new Database();
 $email = $_SESSION['email'];
 //Avoid deleting admin account 
-$sql = "SELECT * FROM users WHERE ID != 1 AND email != :email";
+$sql = "SELECT * FROM users WHERE id != 1 AND email != :email";
 $db->executeWithParam($sql, array(array(':email', $email)));
 $user = $db->resultset();
 $db =null;
@@ -41,7 +41,7 @@ $db =null;
     <!-- IONICONS FONT -->
     <link rel="stylesheet" href="../vendors/ionicons/css/ionicons.min.css">
     <!-- OUR STYLE FOR ADMIN -->
-    <link rel="stylesheet" href="css/admin-style.css">
+    <link rel="stylesheet" href="css/admin_style.css">
 <!--    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">-->
 
     <title>Bellissimo Wachtwoord vergeten</title>
@@ -66,9 +66,9 @@ $db =null;
                             ?>
                             <li class="list-group-item">
                                 <div class="row">
-                                    <div class="col-3"><?php print $value['ID']; ?></div>
+                                    <div class="col-3"><?php print $value['id']; ?></div>
                                     <div class="col-3"><?php print $value['email']; ?></div>
-                                    <div class="col-6"><a class="btn btn-primary" href="UserDelete.php?delete=<?php print $value['ID']; ?>" onclick="return confirm('Ben je zeker dat je deze gebruiker wil verwijderen?');">Verwijder gebruiker</a></div>
+                                    <div class="col-6"><a class="btn btn-primary" href="userDelete.php?delete=<?php print $value['id']; ?>" onclick="return confirm('Ben je zeker dat je deze gebruiker wil verwijderen?');">Verwijder gebruiker</a></div>
                                 </div>
                             </li>
                             <?php
