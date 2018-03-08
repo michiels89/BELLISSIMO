@@ -33,7 +33,7 @@ if (!isset($_SESSION['email'])) {
             $treatList = $treat->getAllTreatments();
             foreach($treatList as $treatment){
             
-           $duurtijd =$treatment['duurTijdUur'] . "u" . $treatment['duurTijdMin'] . "m";?> 
+           $duurtijd =$treatment['duurTijd'] . "m";?> 
               
             <div><?=$treatment['id'];?></div>
             <div><?=$treatment['naam'];?></div>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 02 mrt 2018 om 14:55
+-- Gegenereerd op: 08 mrt 2018 om 08:56
 -- Serverversie: 10.1.25-MariaDB
 -- PHP-versie: 7.1.7
 
@@ -83,18 +83,19 @@ CREATE TABLE `treatments` (
   `id` int(5) NOT NULL,
   `naam` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `prijs` float NOT NULL,
-  `duurtTijd` time(6) NOT NULL,
-  `omschrijvingen` varchar(500) NOT NULL
+  `duurTijdUur` int(2) NOT NULL,
+  `duurTijdMin` int(2) NOT NULL,
+  `omschrijving` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `treatments`
 --
 
-INSERT INTO `treatments` (`id`, `naam`, `prijs`, `duurtTijd`, `omschrijvingen`) VALUES
-(1, 'Manicure', 15, '01:00:00.000000', 'Bij een manicure worden de nagelriemen achteruit geduwd en verzorgd, de dode huidcellen verwijderd en nagels in vorm gevijld. Daarna kan je genieten van een ontspannende handmassage. Als afwerking worden de nagels gelakt met een doorzichtige nagellak.'),
-(2, 'Gellak: full color', 28, '01:00:00.000000', 'Deze wordt op de natuurlijke nagel aangebracht. De textuur van gellak is iets dikker dan een gewone nagellak, blijft een 3 tal weken zitten en geeft de nagels meer stevigheid. Na het aanbrengen wordt deze uitgehard onder een LED lamp. Full color: keuze uit verschillende kleuren.'),
-(3, 'Gellak : french', 30, '01:15:00.000000', 'Deze wordt op de natuurlijke nagel aangebracht. De textuur van gellak is iets dikker dan een gewone nagellak, blijft een 3 tal weken zitten en geeft de nagels meer stevigheid. Na het aanbrengen wordt deze uitgehard onder een LED lamp. French : met een wit randje.');
+INSERT INTO `treatments` (`id`, `naam`, `prijs`, `duurTijdUur`, `duurTijdMin`, `omschrijving`) VALUES
+(1, 'Manicure', 15, 1, 0, 'Bij een manicure worden de nagelriemen achteruit geduwd en verzorgd, de dode huidcellen verwijderd en nagels in vorm gevijld. Daarna kan je genieten van een ontspannende handmassage. Als afwerking worden de nagels gelakt met een doorzichtige nagellak.'),
+(2, 'Gellak: full color', 28, 1, 15, 'Deze wordt op de natuurlijke nagel aangebracht. De textuur van gellak is iets dikker dan een gewone nagellak, blijft een 3 tal weken zitten en geeft de nagels meer stevigheid. Na het aanbrengen wordt deze uitgehard onder een LED lamp. Full color: keuze uit verschillende kleuren.'),
+(3, 'Gellak : french', 30, 1, 30, 'Deze wordt op de natuurlijke nagel aangebracht. De textuur van gellak is iets dikker dan een gewone nagellak, blijft een 3 tal weken zitten en geeft de nagels meer stevigheid. Na het aanbrengen wordt deze uitgehard onder een LED lamp. French : met een wit randje.');
 
 -- --------------------------------------------------------
 

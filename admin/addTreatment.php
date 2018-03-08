@@ -1,5 +1,6 @@
 
 <?php
+require_once('TreatmentList.php');
 if (!isset($_SESSION)) {
     session_start();
 }
@@ -9,18 +10,50 @@ if (!isset($_SESSION['email'])) {
     header("Location:index.php");
 }
 
-//require_once('TreatmentList.php');
-//$treatL = new TreatmentList();
 //
-//
-//if(isset($_GET['action']) && $_GET['action'] == 'add'){
-//    
-//    
-//}
+if (isset($_SESSION['message'])) {
+     echo "<script>
+        window.alert('Inhoud mag niet leeg zijn');
+        </script>";
+    unset($_SESSION['message']);
+}
+
+$errors = [];
+$treatL = new TreatmentList();
+
+// check if fields aren't empty
+
+if(isset($_POST['add'])){
+    if (empty($_POST['naam'])) {
+    $errors[] = "Vul de naam van de behandeling in!";
+    } 
+    if (empty($_POST['omschrijving'])) {
+    $errors[] = "Vul de omschrijving in!";
+    } 
+    if (empty($_POST['prijs'])) {
+    $errors[] = "Vul de prijs in!";
+    } 
+    if (empty($_POST['duurtijd'])) {
+    $errors[] = "Duidt de duurtijd aan in minuten!";
+    } 
+    
+    if(count($errors) == 0){
+        $treatL->addTreatment($_POST['naam'],$_POST['omschrijving'],$_POST['prijs'],$_POST['duurtijd']);
+        echo "<script>
+        window.alert('Opgeslagen');
+        window.location.href='loggedIn.php';
+        </script>";
+
+    } elseif(count($errors) == 4) {
+        $_SESSION['message'] = 'Inhoud mag niet leeg zijn';
+        header ('Location: addTreatment.php?action=add&id=' . $_POST['id'] . '');
+    }
+ 
+        
+}
+    
 
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,10 +62,17 @@ if (!isset($_SESSION['email'])) {
     <title>Behandelingen toevoegen</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/admin_style.css">
+    <script type="text/javascript">
+    function sliderChange(val){
+        
+        document.getElementById('sliderStatus').innerHTML = val;
+    }
+    </script>
 </head>
 <body>
+
    <?php require_once('include/menu.php');?>
-    <h2 class="text-center">Behandelingen toevoegen</h2>
+    
     <div class="container">
         <div class="row">
             <div class="col"></div>
@@ -40,7 +80,7 @@ if (!isset($_SESSION['email'])) {
                
                <?php 
                 if ($_GET['action'] == 'add') {
-            ?>
+            ?><h2 class="text-center">Behandelingen toevoegen</h2>
                 <form action="addTreatment.php?action=add" method="post">
                     <div class="form-group">
                         <label for="naamBehandeling">Naam behandeling:</label>
@@ -49,7 +89,7 @@ if (!isset($_SESSION['email'])) {
                     </div>
                     <div class="form-group">
                         <label for="omschrijving">Omschrijving: </label>
-                        <textarea class="form-control" rows="3" id="omschrijving"  placeholder="Omschrijving"
+                        <textarea class="form-control" rows="4" id="omschrijving"  placeholder="Omschrijving"
                                name="omschrijving"></textarea>
                        
                     </div>
@@ -59,117 +99,62 @@ if (!isset($_SESSION['email'])) {
                                placeholder="Prijs"
                                name="prijs">
                     </div>
-                    <div class="form-group">
-                        <label for="duurtijdBehandeling">Duur behandeling: </label>
-                        <input type="range" max="3" step="0.25" class="form-control" id="duurtijdBehandeling" name="duurtijd" list="tickmarks" value= ''>
-                               <datalist id="tickmarks">
-                                  <option value="0" label='0u'>
-                                  <option value="0.25">
-                                  <option value="0.5">
-                                  <option value="0.75">
-                                  
-                                  <option value="1" label="1u">
-                                  <option value="1.25">
-                                  <option value="1.50">
-                                  <option value="1.75">
-                                  
-                                  <option value="2" label="2u">
-                                  <option value="2.25">
-                                  <option value="2.50">
-                                  <option value="2.75">
-                                  
-                                  <option value="3" label="3u">
-                                </datalist>
-                                <output for="duurtijdBehandeling"></output>
+                      <div class="form-group"> 
+                        <label for="duurtijdBehandeling">Duur behandeling minuten: </label>
+                        <input type="range" max="180" step="15" class="form-control" id="duurtijdBehandeling"
+                               name="duurtijd" list="tickmark" onchange="sliderChange(this.value)" value="">
+                         <span id='sliderStatus'></span>   
+
+                     
                     </div>
                     <button type="submit" class="btn btn-primary" name="add">Voeg toe</button>
                     <a href="loggedIn.php" class="btn btn-primary">Annuleer</a>
+                    <p><?php echo implode("<br><br>", $errors);?></p>
                 </form>
-                <?php } else if ($_GET['action'] == 'add') {?>
-                
-                             <form action="addTreatment.php?action=add" method="post">
+                 
+                <?php } else if ($_GET['action'] == "replace") {
+                $treatment = $treatL->getTreatmentByID($_GET["id"]);
+                ?>
+
+               
+                <h2 class="text-center">Behandelingen aanpassen</h2>
+                             <form action="addTreatment.php" method="post">
                     <div class="form-group">
                         <label for="naamBehandeling">Naam behandeling:</label>
-                        <input type="text" class="form-control" id="naamBehandeling"
-                               placeholder="Naam" name="naam">
+                        <input type="text" class="form-control" id="naamBehandeling" value="<?=$treatment['naam'];?>" name="naam">
                     </div>
                     <div class="form-group">
                         <label for="omschrijving">Omschrijving: </label>
-                        <textarea class="form-control" rows="3" id="omschrijving"  placeholder="Omschrijving"
-                               name="omschrijving"></textarea>
+                        <textarea class="form-control" rows="4" id="omschrijving" name="omschrijving"
+                        ><?=$treatment['omschrijving'];?></textarea>
                        
                     </div>
                     <div class="form-group">
                         <label for="prijsBehandeling">Prijs behandeling: </label>
                         <input type="float" class="form-control" id="prijsBehandeling"
-                               placeholder="Prijs"
+                               value="<?=$treatment['prijs'];?>"
                                name="prijs">
                     </div>
+
+
                     <div class="form-group">
-                        <label for="duurtijdBehandeling">Duur behandeling: </label>
-                        <input type="range" max="3" step="0.25" class="form-control" id="duurtijdBehandeling" name="duurtijd" list="tickmarks" value= ''>
-                               <datalist id="tickmarks">
-                                  <option value="0" label='0u'>
-                                  <option value="0.25">
-                                  <option value="0.5">
-                                  <option value="0.75">
-                                  
-                                  <option value="1" label="1u">
-                                  <option value="1.25">
-                                  <option value="1.50">
-                                  <option value="1.75">
-                                  
-                                  <option value="2" label="2u">
-                                  <option value="2.25">
-                                  <option value="2.50">
-                                  <option value="2.75">
-                                  
-                                  <option value="3" label="3u">
-                                </datalist>
-                                <output for="duurtijdBehandeling"></output>
-                    </div>
-                    <button type="submit" class="btn btn-primary" name="add">Vervang</button>
+                        <label for="duurtijdBehandeling">Duur behandeling minuten: </label>
+                        <input type="range" max="180" step="15" class="form-control" id="duurtijdBehandeling"
+                               name="duurtijd" list="tickmark" onchange="sliderChange(this.value)" value="<?=$treatment['duurTijd'];?>">
+                         <span id='sliderStatus'><?=$treatment['duurTijd'];?></span>   
+
+                     <input type="hidden" name="id" value="<?php echo $_GET['id']?>">     
+                      </div>
+                    <button type="submit" class="btn btn-primary" name="replace">Vervang</button>
                     <a href="loggedIn.php" class="btn btn-primary">Annuleer</a>
-                </form>
+                   </form>
              
               <?php }?>  
-<!--
-                <label>Select your preferred code editor:</label>
-<input type="text" id="txt_ide" list="ide" />
-<datalist id="ide">
-    <option value="Brackets" />
-    <option value="Coda" />
-    <option value="Dreamweaver" />
-    <option value="Espresso" />
-    <option value="jEdit" />
-    <option value="Komodo Edit" />
-    <option value="Notepad++" />
-    <option value="Sublime Text 2" />
-    <option value="Taco HTML Edit" />
-    <option value="Textmate" />
-    <option value="Text Pad" />
-    <option value="TextWrangler" />
-    <option value="Visual Studio" />
-    <option value="VIM" />
-    <option value="XCode" />
-</datalist>
--->
 
-
-<!--
-                <div class="form-group">
-  <label for="sel1">Select list:</label>
-  <select class="form-control" id="sel1">
-    <option>1</option>
-    <option>2</option>
-    <option>3</option>
-    <option>4</option>
-  </select>
-</div>
--->
             </div>
             <div class="col"></div>
         </div>
     </div>
+
 </body>
 </html>

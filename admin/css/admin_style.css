@@ -143,3 +143,38 @@ form div{
     height: 100px;
 }
 
+/**********slider************/
+#slider-demo {
+
+  box-shadow: inset 8px 4px 16px #333;
+
+  border-bottom: #eee solid 1px;
+
+}
+
+ 
+
+#slider-demo .follow_bar {
+
+  background-color: #693;
+
+  box-shadow: inset 0 1px 3px #222;
+
+}
+
+ 
+
+.sglide-buttons {
+
+  vertical-align: middle;
+
+  border-radius: 9px;
+
+}
+
+ 
+
+.sglide-buttons:hover,
+.sglide-buttons:active { background-color: #fff; }
+
+

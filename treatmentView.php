@@ -22,7 +22,7 @@ require_once('admin/TreatmentList.php');
             $treat = new TreatmentList();
             $treatList = $treat->getAllTreatments();
             foreach($treatList as $treatment){
-                $duurtijd = $treatment['duurTijdUur'] . "u" . $treatment['duurTijdMin'] ."m";
+                $duurtijd = $treatment['duurTijd'] ."m";
             ?>    
            <div class="box colH"><?=$treatment['naam'];?></div>
            <div class="box"><?=$treatment['omschrijving'];?></div>
