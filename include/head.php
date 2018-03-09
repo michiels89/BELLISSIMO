@@ -2,7 +2,7 @@
        <div class="container">
 <!-------------------------------menu----------------------------------------------->
            
-            <a href="index.php" name="1"><img src="img/bellissimo.jpg"></a>
+            <a href="index.php" name="1"><img src="img/bellissimo-20.jpg"></a>
             <a class='btn btn-primary' href='index.php'>Home</a> 
             <a class='btn btn-primary' href='treatmentView.php'>Behandelingen</a>
             <a class='btn btn-primary' href='galery.php'>Foto galerij</a> 
