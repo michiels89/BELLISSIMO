@@ -21,7 +21,7 @@ if (isset($_SESSION['message'])) {
 $errors = [];
 $treatL = new TreatmentList();
 
-// check if fields aren't empty
+// check if fields aren't empty ADD
 
 if(isset($_POST['add'])){
     if (empty($_POST['naam'])) {
@@ -51,6 +51,17 @@ if(isset($_POST['add'])){
  
         
 }
+// replace treatment
+if(isset($_POST['replace'])){
+    
+    $treatL->updateTreatment($_POST['naam'],$_POST['omschrijving'],$_POST['prijs'],$_POST['duurtijd']);
+    echo "<script>
+        window.alert('De behandeling werd aangepast!');
+        window.location.href='loggedIn.php';
+        </script>";
+}
+
+
     
 
 ?>
@@ -65,7 +76,7 @@ if(isset($_POST['add'])){
     <script type="text/javascript">
     function sliderChange(val){
         
-        document.getElementById('sliderStatus').innerHTML = val;
+        document.getElementById('sliderStatus').innerHTML = val + ' minuten';
     }
     </script>
 </head>
@@ -101,9 +112,9 @@ if(isset($_POST['add'])){
                     </div>
                       <div class="form-group"> 
                         <label for="duurtijdBehandeling">Duur behandeling minuten: </label>
-                        <input type="range" max="180" step="15" class="form-control" id="duurtijdBehandeling"
-                               name="duurtijd" list="tickmark" onchange="sliderChange(this.value)" value="">
-                         <span id='sliderStatus'></span>   
+                        <input type="range" max="180" step="5" class="form-control" id="duurtijdBehandeling"
+                               name="duurtijd" list="tickmark" onchange="sliderChange(this.value)" value="60">
+                         <span id='sliderStatus'>60 minuten</span>   
 
                      
                     </div>
@@ -139,9 +150,9 @@ if(isset($_POST['add'])){
 
                     <div class="form-group">
                         <label for="duurtijdBehandeling">Duur behandeling minuten: </label>
-                        <input type="range" max="180" step="15" class="form-control" id="duurtijdBehandeling"
+                        <input type="range" max="180" step="5" class="form-control" id="duurtijdBehandeling"
                                name="duurtijd" list="tickmark" onchange="sliderChange(this.value)" value="<?=$treatment['duurTijd'];?>">
-                         <span id='sliderStatus'><?=$treatment['duurTijd'];?></span>   
+                         <span id='sliderStatus'><?=$treatment['duurTijd'];?> minuten</span>   
 
                      <input type="hidden" name="id" value="<?php echo $_GET['id']?>">     
                       </div>

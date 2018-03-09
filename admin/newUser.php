@@ -1,6 +1,14 @@
 <?php
 require '../Database.php';
-session_start();
+if (!isset($_SESSION)) {
+    session_start();
+}
+
+// Check if user is logged in
+if (!isset($_SESSION['email'])) {
+    header("Location:index.php");
+}
+
 $db = new Database();
 //Good practice to declare arrays for readability
 $errors = [];

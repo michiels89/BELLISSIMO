@@ -1,7 +1,15 @@
 <?php
-//Connect to MySQL database using PDO.
-session_start();
 require_once '../Database.php';
+if (!isset($_SESSION)) {
+    session_start();
+}
+
+// Check if user is logged in
+if (!isset($_SESSION['email'])) {
+    header("Location:index.php");
+}
+
+//Connect to MySQL database using PDO.
 $db = new Database();
 
 //The user's id, which should be present in the GET variable "uid"

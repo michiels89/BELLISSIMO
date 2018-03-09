@@ -1,10 +1,18 @@
 <?php
-session_start();
+
 require_once '../Database.php';
-$errors = [];
+
+if (!isset($_SESSION)) {
+    session_start();
+}
+
+// Check if user is logged in
 if (!isset($_SESSION['email'])) {
     header("Location:index.php");
 }
+
+$errors = [];
+
 //php for password change
 //1. Check is Password Change button is clicked
 if (isset($_POST['change'])) {

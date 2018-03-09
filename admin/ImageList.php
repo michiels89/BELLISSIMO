@@ -18,12 +18,12 @@ class ImageList{
         $db->executeWithoutParam($sql);
         $resultSet = $db->resultset();
         $db = null;
-//        $imageList = [];
-//        foreach($resultSet as $image){
-//            array_push($imageList, $image);
-//        }
-//        return $imageList;
-        return $resultSet;
+        $imageList = [];
+        foreach($resultSet as $image){
+            array_push($imageList, $image);
+        }
+        return $imageList;
+        
        
     }
     
