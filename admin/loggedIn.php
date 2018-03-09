@@ -50,7 +50,17 @@ if(isset($_GET['action']) && $_GET['action'] == 'delete'){
             $treatList = $treat->getAllTreatments();
             foreach($treatList as $treatment){
             
-           $duurtijd =$treatment['duurTijd'] . "m";?> 
+            // changing min in h&m
+                $uur = floor($treatment['duurTijd']/60);
+                $min = $treatment['duurTijd']%60;
+                if($uur == 0){
+                    $duurtijd = $min . "min";
+                }elseif($min == 0){
+                    $duurtijd = $uur . "u";
+                }else{
+                    $duurtijd = $uur . "u" . $min ."min";
+                }
+              ?> 
               
             <div><?=$treatment['id'];?></div>
             <div><?=$treatment['naam'];?></div>

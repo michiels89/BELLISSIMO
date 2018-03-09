@@ -20,18 +20,34 @@ html {
 }
 body{
     box-sizing: border-box;
-    width:80%;
+    width:150rem;
     margin: auto;
+    color:white;
     background-size:cover;
-	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/pexels-photo-851219.jpeg) center;
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/nail-varnish-2112359_1920.jpg);
 	background-attachment: fixed;
     background-repeat: no-repeat;
-/*    height:100vh;*/
+    height:100vh;
     height: 100%;
 }
 
 
 /************************************ BUTTONS **************************************************/
+
+/****************MENU******************************/
+
+.container{
+    
+    float: right;
+}
+.btn{
+    margin: 1rem 1.2rem;
+    
+}
+.afsprakenagenda{
+    
+    background-color: aliceblue;
+}
 
 /* ------------------- SHARE BUTTONS ------------------------------ */
 
@@ -83,11 +99,12 @@ body{
 }
 .box{
     display: inline-block;
-    color: #212121;
+    color:whitesmoke;
+/*    color: #212121;*/
     padding: 5px;
     font-size: 100%;
     line-height: 26px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid whitesmoke;
 /*     margin: 2rem auto;*/
 }
 

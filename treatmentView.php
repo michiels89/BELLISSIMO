@@ -11,31 +11,34 @@ require_once('admin/TreatmentList.php');
 </head>
 <body>
     <?php require_once('include/head.php'); ?>
-    <h1>Behandelingen</h1>
+    <h1 class="text-center">Behandelingen</h1><br><br>
        
     <div class="wrapperTreatment text-center">
        <div class="box colH">Behandeling</div>
        <div class="box colH">Omschrijving</div>
        <div class="box colH">Prijs</div>
        <div class="box colH">Duurtijd</div>
+       
         <?php
             $treat = new TreatmentList();
             $treatList = $treat->getAllTreatments();
             foreach($treatList as $treatment){
-                $duurtijd = $treatment['duurTijd'] ."m";
+                // changing min in h&m
+                $uur = floor($treatment['duurTijd']/60);
+                $min = $treatment['duurTijd']%60;
+                if($uur == 0){
+                    $duurtijd = $min . "min";
+                }elseif($min == 0){
+                    $duurtijd = $uur . "u";
+                }else{
+                    $duurtijd = $uur . "u" . $min ."min";
+                }
             ?>    
            <div class="box colH"><?=$treatment['naam'];?></div>
            <div class="box"><?=$treatment['omschrijving'];?></div>
            <div class="box"><?=$treatment['prijs'];?></div>
            <div class="box"><?=$duurtijd?></div>
-            
-            
-            
-            
-        <?php
-            } 
-           
-            ?>
+    <?php } ?>
     </div>
        
 <?php
