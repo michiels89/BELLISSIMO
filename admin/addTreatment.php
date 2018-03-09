@@ -54,7 +54,7 @@ if(isset($_POST['add'])){
 // replace treatment
 if(isset($_POST['replace'])){
     
-    $treatL->updateTreatment($_POST['naam'],$_POST['omschrijving'],$_POST['prijs'],$_POST['duurtijd']);
+    $treatL->updateTreatment($_POST['id'],$_POST['naam'],$_POST['omschrijving'],$_POST['prijs'],$_POST['duurtijd']);
     echo "<script>
         window.alert('De behandeling werd aangepast!');
         window.location.href='loggedIn.php';

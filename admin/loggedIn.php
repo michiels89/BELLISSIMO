@@ -8,6 +8,17 @@ if (!isset($_SESSION)) {
 if (!isset($_SESSION['email'])) {
     header("Location:index.php");
 }
+// new object treatmentList
+$treat = new TreatmentList();
+
+//checking if action isset and deleting treatment
+if(isset($_GET['action']) && $_GET['action'] == 'delete'){
+    $treat->deleteTreatmentById($_GET['id']);
+        echo "<script>
+        window.alert('De behandeling werd verwijderd!');
+        window.location.href='loggedIn.php';
+        </script>";
+    }
 
 ?>
 
@@ -27,9 +38,15 @@ if (!isset($_SESSION['email'])) {
        <div>Behandeling toevoegen: 
          <a class="btn btn-primary btnL" href="addTreatment.php?action=add"><i class="ion-plus-round"></i></a></div>
           <div class="wrapperTreatments text-center">
-       
+          <div class="colH">Id</div>
+          <div class="colH">Naam</div>
+          <div class="colH">Omschrijving</div>
+          <div class="colH">Prijs</div>
+          <div class="colH">Duurtijd</div>
+          <div class="colH">Aanpassen/</div>
+          <div class="colH">Verwijderen</div>
         <?php
-            $treat = new TreatmentList();
+            
             $treatList = $treat->getAllTreatments();
             foreach($treatList as $treatment){
             
@@ -40,8 +57,10 @@ if (!isset($_SESSION['email'])) {
             <div><?=$treatment['omschrijving'];?></div>
             <div><?=$treatment['prijs'];?></div>
             <div><?=$duurtijd;?></div>
-            <div><a class="btn btn-primary btnL"href="addTreatment.php?action=replace&id=<?=$treatment['id'];?>"><i class="ion-edit"></i></a></div>
-            <div><a class="btn btn-primary btnL" href="loggedIn.php"><i class="ion-close-round"></i></a></div>
+            <div>
+            <a class="btn btn-primary btnL"href="addTreatment.php?action=replace&id=<?=$treatment['id'];?>"><i class="ion-edit"></i></a></div>
+            <div><a class="btn btn-primary btnL" href="loggedIn.php?action=delete&id=<?=$treatment['id'];?>"><i class="ion-close-round"></i></a>
+            </div>
             
             
         <?php    }
