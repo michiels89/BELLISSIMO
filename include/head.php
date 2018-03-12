@@ -1,7 +1,8 @@
    <header>
  <!-------------------------------menu----------------------------------------------->
-      <a href="index.php" name="1"><img src="logo's/B.jpg"></a>
-       <div class="container">
+      <div class="container">
+      <a class="text-center" href="index.php" name="1"><img src="logo's/B.jpg"></a>
+       
 
             <a class='btn btn-primary' href='index.php'>Home</a> 
             <a class='btn btn-primary' href='treatmentView.php'>Behandelingen</a>

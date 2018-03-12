@@ -20,7 +20,7 @@ html {
 }
 body{
     box-sizing: border-box;
-    width:200rem;
+    width:100%;
     margin: auto;
 /*
     color:white;
@@ -40,16 +40,15 @@ body{
 
 .container{
     
-    float: right;
+ margin-left: 0;
 }
-.btn{
+.btn,
+.afsprakenagenda-button{
     margin: 1rem 1.2rem;
+    background-color: black !important;
     
 }
-.afsprakenagenda{
-    
-    background-color: aliceblue;
-}
+
 
 /* ------------------- SHARE BUTTONS ------------------------------ */
 
@@ -144,6 +143,12 @@ body{
     margin:auto;
 }
 
+/***************************************SOCIAL MEDIA*****************************/
+
+.socialeMedia a{
+    
+    display: inline-block;
+}
 
 
 

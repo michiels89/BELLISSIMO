@@ -70,24 +70,24 @@
     <div class="item active">
       <img src="img/IMG_3036.JPG" alt="Chania">
       <div class="carousel-caption">
-        <h3>Los Angeles</h3>
-        <p>LA is always so much fun!</p>
+        <h3>Bellissimo</h3>
+        <p>Natural Beauty</p>
       </div>
     </div>
 
     <div class="item">
       <img src="img/IMG_3039.JPG" alt="Chicago">
       <div class="carousel-caption">
-        <h3>Chicago</h3>
-        <p>Thank you, Chicago!</p>
+         <h3>Bellissimo</h3>
+        <p>Natural Beauty</p>
       </div>
     </div>
 
     <div class="item">
       <img src="img/IMG_3045.JPG" alt="New York">
       <div class="carousel-caption">
-        <h3>New York</h3>
-        <p>We love the Big Apple!</p>
+         <h3>Bellissimo</h3>
+        <p>Natural Beauty</p>
       </div>
     </div>
   </div>
@@ -102,6 +102,7 @@
     <span class="sr-only">Next</span>
   </a>
 </div> 
+<br>
 
 <!------------------------------- Load Facebook SDK for JavaScript ----------------->
         <div id="fb-root"></div>
@@ -139,7 +140,7 @@
          
           
 <!-------------------------------- Your share button code -------------------------->
-    <div class="share-wrapper">
+    <div class="share-wrapper text-center">
         <div class="fb-share-button" data-href="http://localhost/BELLISSIMO/index.php" data-layout="button" data-size="small" data-mobile-iframe="false"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.index.php%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Delen</a></div>
         
         <div class="fb-like" data-href="https://www.index.php" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
