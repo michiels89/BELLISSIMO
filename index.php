@@ -13,7 +13,7 @@
     <meta property="og:type"               content="website" />
     <meta property="og:title"              content="Bellissimo Natural Beauty" />
     <meta property="og:description"        content="Laat hier uw na." />
-    <meta property="og:image"              content="img/image.jpg"  />
+    <meta property="og:image"              content="logo's/B.jpg"  />
     
 <!--    shortcut icon-->
     <link rel="shortcut icon" href="images/favico.png">
@@ -44,12 +44,65 @@
 <!--    stylesheets-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    
+<!--    script carousel-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Bellissimo</title>
 </head>
 <body>
 <?php require_once('include/head.php'); ?>
    
    <main>
+<!---------------------------------Image CAROUSEL------------------------------------->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+
+    
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="img/IMG_3036.JPG" alt="Chania">
+      <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>LA is always so much fun!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/IMG_3039.JPG" alt="Chicago">
+      <div class="carousel-caption">
+        <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/IMG_3045.JPG" alt="New York">
+      <div class="carousel-caption">
+        <h3>New York</h3>
+        <p>We love the Big Apple!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div> 
+
 <!------------------------------- Load Facebook SDK for JavaScript ----------------->
         <div id="fb-root"></div>
         <script>(function(d, s, id) {
@@ -82,6 +135,8 @@
         async defer
         src="//assets.pinterest.com/js/pinit.js">
         </script>
+         
+         
           
 <!-------------------------------- Your share button code -------------------------->
     <div class="share-wrapper">
@@ -95,7 +150,7 @@
        
        
    </main>
-<?php  require_once('include/backHome.php'); ?><br><br><br><br>
+<br><br><br><br>
 <?php  require_once('include/socialeMedia.php');?>
 
       

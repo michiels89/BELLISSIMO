@@ -1,6 +1,6 @@
    <header>
  <!-------------------------------menu----------------------------------------------->
-      <a href="index.php" name="1"><img src="img/bellissimo-20.jpg"></a>
+      <a href="index.php" name="1"><img src="logo's/B.jpg"></a>
        <div class="container">
 
             <a class='btn btn-primary' href='index.php'>Home</a> 

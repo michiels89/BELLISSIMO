@@ -20,15 +20,17 @@ html {
 }
 body{
     box-sizing: border-box;
-    width:150rem;
+    width:200rem;
     margin: auto;
+/*
     color:white;
     background-size:cover;
-	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/nail-varnish-2112359_1920.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/IMG_3031.jpg);
 	background-attachment: fixed;
     background-repeat: no-repeat;
     height:100vh;
     height: 100%;
+*/
 }
 
 
@@ -101,9 +103,9 @@ body{
     display: inline-block;
     color:whitesmoke;
 /*    color: #212121;*/
-    padding: 5px;
+    padding: 0.5rem;
     font-size: 100%;
-    line-height: 26px;
+    line-height: 2.6rem;
     border-bottom: 2px solid whitesmoke;
 /*     margin: 2rem auto;*/
 }
@@ -114,6 +116,16 @@ body{
     font-weight: bold;
 
 }
+
+/*************************************IMAGE CAROUSEL******************************/
+.carousel-inner > .item > img,
+.carousel.inner > .item > a > img{
+    
+    width:50%;
+    margin:auto;
+    
+}
+
 /**************************************GALERY*************************************/
 
 .wrapperImg{
