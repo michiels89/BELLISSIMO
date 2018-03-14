@@ -13,7 +13,8 @@ require_once('admin/TreatmentList.php');
 </head>
 <body>
     <?php require_once('include/head.php'); ?>
-    <h1 class="text-center">Behandelingen</h1><br><br>
+    <main>
+<!--    <h1 class="text-center">Behandelingen</h1><br><br>-->
       
        
     <div class="wrapperTreatment text-center">
@@ -45,8 +46,9 @@ require_once('admin/TreatmentList.php');
     </div>
        
 <?php
-    require_once('include/backHome.php');
-    ?>
     
+    require_once('include/socialeMedia.php');
+    ?>
+   </main> 
 </body>
 </html>

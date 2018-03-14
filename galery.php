@@ -16,6 +16,7 @@ require_once('admin/ImageList.php');
 
 <body>
    <?php require_once('include/head.php'); ?>
+   <main>
    <div class="container">
 
            <?php
@@ -35,36 +36,11 @@ require_once('admin/ImageList.php');
         ?>
     </div>
     
-<!--------------------------------------------------------------------------------------->
-
-<!--    <table>-->
-
-
-
-        <?php
-//        $imageList = new ImageList();
-//        $images = $imageList->getAllImages();
-//        $i = 0;
-//        foreach($images as $image){
-//            if($i%2 == 0){
-//                echo"<tr>";
-//            }
-//            echo "<td><img src='files/{$image['image']}' alt='' ></td>";
-//            if($i%2 == 2){
-//                echo"</tr>";
-//            }
-//            $i++;
-//            
-//        }
-        
-        ?>
-
-
-
-        
-<!--    </table>-->
+   <?php
+    require_once('include/socialeMedia');
+    ?>
     
-
+</main>
     
 </body>
 </html>

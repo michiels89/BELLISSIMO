@@ -32,6 +32,7 @@ header{
 main{
     width:80%;
     margin:auto;
+    padding: 5rem;
     
     border-left:2px solid black;
     border-right:2px solid black;
@@ -51,16 +52,44 @@ p{
     font-size: 2rem;
     font-family: 'raleway';
 }
+strong{
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    
+}
+
+/********************************HEAD*****************************************/
+
+.logo{
+    float: left;
+}
+.img-logo{
+        max-width: 100%;
+    border-bottom: 2px solid black; 
+
+}
 
 
 /************************************ BUTTONS **************************************************/
 
 /****************MENU******************************/
 
-.container{
+.menu-wrapper{
     
- margin-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 0.2rem; 
+    padding-top:5.5rem;
 }
+.contact-wrapper{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 0.2rem; 
+    padding-top:5.4rem;
+}
+
+
 .btn,
 .afsprakenagenda-button{
     margin: 1rem 1.2rem !important;
@@ -117,6 +146,8 @@ p{
 .wrapperTreatment{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 1fr;
+    font-size: 1.5rem;
+    font-family: 'raleway';
 
   
 }
@@ -134,15 +165,23 @@ p{
 
 .colH{
     
-    font-weight: bold;
+/*    font-weight: bold;*/
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    margin-top:1.5rem;
 
 }
 
 /*************************************IMAGE CAROUSEL******************************/
+.slide{
+    width:62%;
+    margin:auto;
+}
+
 .carousel-inner > .item > img,
 .carousel.inner > .item > a > img{
     
-    width:50%;
+    width:100%;
     margin:auto;
     
 }

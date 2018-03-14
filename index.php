@@ -56,7 +56,7 @@
 <?php require_once('include/head.php'); ?>
    
    <main>
-   <p><strong>Over ons:</strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
+   <p><strong>Over ons:</strong>  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
 <!---------------------------------Image CAROUSEL------------------------------------->
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -71,7 +71,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="img/IMG_3036.JPG" alt="Chania">
+      <img src="img/IMG_3036.JPG" alt="Gel polish">
       <div class="carousel-caption">
         <h3>Bellissimo</h3>
         <p>Natural Beauty</p>
@@ -79,7 +79,7 @@
     </div>
 
     <div class="item">
-      <img src="img/IMG_3039.JPG" alt="Chicago">
+      <img src="img/IMG_3039.JPG" alt="Gel polish">
       <div class="carousel-caption">
          <h3>Bellissimo</h3>
         <p>Natural Beauty</p>
@@ -87,7 +87,7 @@
     </div>
 
     <div class="item">
-      <img src="img/IMG_3045.JPG" alt="New York">
+      <img src="img/IMG_3045.JPG" alt="Nagel studio">
       <div class="carousel-caption">
          <h3>Bellissimo</h3>
         <p>Natural Beauty</p>

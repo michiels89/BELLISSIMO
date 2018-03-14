@@ -1,4 +1,4 @@
-<footer>
+
 <div class="socialeMedia-wrapper" >
 <h1 class="socialeMedia text-center">Sociale Media:</h1>
 <!--
@@ -23,4 +23,3 @@
 <img title="Instagram" alt="RSS" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" width="35" height="35" />
 </a>
 </div>
-</footer>
