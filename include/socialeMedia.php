@@ -1,6 +1,6 @@
 <footer>
-<div>
-<h1 class="socialeMedia">Sociale Media:</h1>
+<div class="socialeMedia-wrapper" >
+<h1 class="socialeMedia text-center">Sociale Media:</h1>
 <!--
 <a href="https://twitter.com/">
 <img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" width="35" height="35" />

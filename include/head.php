@@ -1,7 +1,7 @@
    <header>
  <!-------------------------------menu----------------------------------------------->
       <div class="container">
-      <a class="text-center" href="index.php" name="1"><img src="logo's/B.jpg"></a>
+      <a class="text-center" href="index.php" name="1"><img src="img/logo.jpg"></a>
        
 
             <a class='btn btn-primary' href='index.php'>Home</a> 

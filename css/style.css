@@ -22,15 +22,34 @@ body{
     box-sizing: border-box;
     width:100%;
     margin: auto;
-/*
-    color:white;
-    background-size:cover;
-	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/IMG_3031.jpg);
-	background-attachment: fixed;
-    background-repeat: no-repeat;
-    height:100vh;
     height: 100%;
+    font-family: 'Dancing Script', cursive;
+}
+header{
+    
+    border-bottom: 2px solid black;
+}
+main{
+    width:80%;
+    margin:auto;
+    
+    border-left:2px solid black;
+    border-right:2px solid black;
+    
+    
+/*
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    
 */
+    
+}
+
+
+p{
+    font-size: 2rem;
+    font-family: 'raleway';
 }
 
 
@@ -44,8 +63,11 @@ body{
 }
 .btn,
 .afsprakenagenda-button{
-    margin: 1rem 1.2rem;
-    background-color: black !important;
+    margin: 1rem 1.2rem !important;
+    background-color: #a98357 !important;
+    color: white;
+    border: 2px solid black !important;
+    font-size: 2rem !important;
     
 }
 
@@ -100,12 +122,12 @@ body{
 }
 .box{
     display: inline-block;
-    color:whitesmoke;
+    
 /*    color: #212121;*/
     padding: 0.5rem;
     font-size: 100%;
     line-height: 2.6rem;
-    border-bottom: 2px solid whitesmoke;
+    border-bottom: 2px solid black;
 /*     margin: 2rem auto;*/
 }
 
@@ -148,6 +170,11 @@ body{
 .socialeMedia a{
     
     display: inline-block;
+}
+.socialeMedia-wrapper{
+    
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
 }
 
 
