@@ -4,7 +4,7 @@
       <div class="menu-wrapper">
            <div> <a class='btn btn-primary' href='index.php'>Home</a> </div>
            <div><a class='btn btn-primary' href='treatmentView.php'>Behandelingen</a></div>
-           <div><a class='btn btn-primary' href='galery.php'>Foto galerij</a> </div>
+           <div><a class='btn btn-primary' href='galery.php'>Fotogalerij</a> </div>
            <div>  <a class="afsprakenagenda" href="https://www.afsprakenagenda.be/1221/bellissimo-natural-beauty">Maak een afspraak</a></div>
            
             
@@ -20,8 +20,8 @@
                         })();
             </script>
         </div> 
-        <div class="contact-wrapper text-center">
-            <h3>Park Ter Heide 16/1</h3>
+        <div class="contact-wrapper">
+            <h3 class="adres">Park Ter Heide 16/1</h3>
             <h3>3271 Averbode</h3>
             <h3>0473 / 210.156</h3>
         </div>
