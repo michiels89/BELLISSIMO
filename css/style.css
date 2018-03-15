@@ -79,14 +79,14 @@ strong{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-row-gap: 0.2rem; 
-    padding-top:5.5rem;
+    padding-top:5.7rem;
 }
 .contact-wrapper{
     
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 0.2rem; 
-    padding-top:5.4rem;
+    padding-top:6.1rem;
 }
 
 
@@ -97,6 +97,8 @@ strong{
     color: white;
     border: 2px solid black !important;
     font-size: 2rem !important;
+    height:4rem;
+    width: 20rem;
     
 }
 

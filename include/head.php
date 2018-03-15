@@ -20,7 +20,7 @@
                         })();
             </script>
         </div> 
-        <div class="contact-wrapper">
+        <div class="contact-wrapper text-center">
             <h3>Park Ter Heide 16/1</h3>
             <h3>3271 Averbode</h3>
             <h3>0473 / 210.156</h3>
