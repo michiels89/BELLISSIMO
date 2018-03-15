@@ -37,7 +37,7 @@ require_once('admin/ImageList.php');
     </div>
     
    <?php
-    require_once('include/socialeMedia');
+    require_once('include/socialeMedia.php');
     ?>
     
 </main>

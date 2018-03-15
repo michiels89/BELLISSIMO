@@ -1,5 +1,5 @@
    <header>
-   <a class="text-center logo" href="index.php" name="1"><img src="img/logo.jpg"></a>
+   <a class="text-center logo" href="index.php" name="1"><img class="img-logo" src="img/logo.jpg"></a>
  <!-------------------------------menu----------------------------------------------->
       <div class="menu-wrapper">
            <div> <a class='btn btn-primary' href='index.php'>Home</a> </div>
