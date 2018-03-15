@@ -34,6 +34,18 @@ if(isset($_POST['upload'])){
     }
     
 }
+//new object imageList
+
+$imageList = new ImageList();
+
+// delet image
+if(isset($_GET['action']) && $_GET['action'] == "delete"){
+    
+    $imageList->deleteImage($_GET['id']);
+        echo("<script>
+    window.alert('Item is verwijderd.');
+    </script>");
+}
 ?>
 
 
@@ -70,14 +82,16 @@ if(isset($_POST['upload'])){
      <div class="container">
 
            <?php
-        $imageList = new ImageList();
+        
         $images = $imageList->getAllImages();
-        $i = 0;
+       
         foreach($images as $image){ ?>
          
         <div class='wrapperImg'>
             <img class='galeryImg'src='../files/<?php print($image['image']);?>'>
             <p><?php print($image['text'])?></p>
+            <div><a class="btn btn-primary btnL" href="uploadImages.php?action=delete&id=<?=$image['id'];?>"><i class="ion-close-round"></i></a>
+            </div>
         </div>
             
         <?php

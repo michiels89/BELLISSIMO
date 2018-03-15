@@ -76,25 +76,25 @@ if (isset($_POST['login'])) {
     <title>Bellisimo Login</title>
 </head>
 <body>
-<br><br>
+<br><br><br><br><br><br><br>
 <div class="container">
     <div class="row">
         <div class="col"></div>
-        <div class="col-4 text-center">
+        <div class="col-6 text-center size">
             <form action="index.php" method="post">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Admin e-mail" name="email">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Wachtwoord</label>
+                    <label for="exampleInputPassword1" >Wachtwoord</label>
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Admin wachtwoord" name="password">
                 </div>
-                <button type="submit" class="btn btn-primary" name="login">Log in</button>
+                <button type="submit" class="btn btn-primary size" name="login">Log in</button>
             </form>
-            <br>
-            <a class="btn btn-primary" href="passwordReset.php">Reset wachtwoord</a>
-            <br><br>
+<!--            <br>-->
+            <a class="btn btn-primary size" href="passwordReset.php">Reset wachtwoord</a>
+<!--            <br><br>-->
             <p class ="text-center errors"><?php echo implode("<br><br>", $errors);?></p>
         </div>
         <div class="col"></div>
