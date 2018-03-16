@@ -35,8 +35,8 @@ if(isset($_GET['action']) && $_GET['action'] == 'delete'){
 <body>
    <?php require_once('include/menu.php');?>
     <h1>Behandelingen</h1>
-       <div>Behandeling toevoegen: 
-         <a class="btn btn-primary btnL" href="addTreatment.php?action=add"><i class="ion-plus-round"></i></a></div>
+       <div><p class='size'><strong>Behandeling toevoegen:</strong>
+         <a class="btn btn-primary btnL plus" href="addTreatment.php?action=add"><i class="ion-plus-round"></i></a></p> </div>
           <div class="wrapperTreatments text-center">
           <div class="colH">Id</div>
           <div class="colH">Naam</div>

@@ -87,11 +87,12 @@ if (isset($_POST['register'])) {
         <?php if (!empty($message)) : ?>
             <p><?= $message ?></p>
         <?php endif; ?>
-        <h2>Registreer een nieuwe gebruiker</h2>
+        <br><br><br><br>
         <div class="container">
             <div class="row">
                 <div class="col"></div>
-                <div class="col-4 text-center">
+                <div class="col-6 text-center">
+                   <h1 class="text-center">Registreer een nieuwe gebruiker</h1>
                     <form action="newUser.php" method="post">
                         <div class="form-group">
                             <label for="email">E-mailadres</label>

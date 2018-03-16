@@ -81,13 +81,14 @@ if (isset($_POST['change'])) {
 <?php require_once('include/header.php');
 require_once 'include/menu.php';?>
 <body>
-    <h2>Wachtwoord wijzigen</h2>
+    
     <div class="container">
         <div class="row">
             <div class="col"></div>
             <div class="col-4 text-center">
+               <h1>Wachtwoord wijzigen</h1>
                 <form action="passwordChange.php" method="post">
-                    <div class="form-group">
+                    <div class="form-group size">
                         <label for="exampleInputEmail1">Huidig wachtwoord</label>
                         <input type="password" class="form-control" id="exampleInputEmail1"
                                placeholder="Huidig wachtwoord" name="password">

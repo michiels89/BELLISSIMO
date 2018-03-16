@@ -95,6 +95,8 @@ if (isset($_POST['reset'])) {
 </head>
 <body>
 <br><br>
+<br><br>
+<br><br>
 <div class="container">
     <div class="row">
         <div class="col"></div>
@@ -103,8 +105,8 @@ if (isset($_POST['reset'])) {
                 <div class="form-group">
                     <label for="exampleInputEmail1">Je account email</label>
                     <input type="email" class="form-control" id="exampleInputEmail1"
-                           placeholder="Voer je email in" name="email">
-                    <small id="emailHelp" class="form-text text-muted">Voer het e-mailadres van een bestaande account in.
+                           placeholder="Voer je email in" name="email"><br>
+                    <small id="emailHelp" class="form-text text-muted size">Voer het e-mailadres van een bestaande account in.
                     </small>
                 </div>
                 <button type="submit" class="btn btn-primary" name="reset">Reset wachtwoord</button>

@@ -48,7 +48,9 @@ $db =null;
 </head>
 <body>
     <br><br>
-    <div class="container">
+    <br><br>
+    <br><br>
+    <div class="container size">
         <div class="row justify-content-md-center">
 
             <div class="col-8 ">

@@ -31,11 +31,28 @@ html {
 }
 
 /************************MENU****************************/
+.header{
+    padding-top: 5rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+}
+.logo{
+    float:left;
+}
+h1{
+    
+    padding-top:6rem;
+    padding-left: 0rem;
 
+}
+
+/*
 
 .header div{
     display:inline-block;
 }
+*/
 
 /**********************Upload Form **************************/
 
@@ -143,6 +160,9 @@ label{
 
 /************************IMAGES Galery*************************/
 
+#content div{
+    display:inline-block;
+}
 .wrapperImg{
     width: 70rem;
     padding: 5px;
@@ -162,6 +182,9 @@ label{
     
     height: 100px;
 }
+.bestand{
+    margin-left: 15rem;
+}
 
 
 /****************************ERRORS*************************************/
@@ -170,4 +193,6 @@ label{
     margin: 1rem;
     color:red;
 }
-
+.plus{
+    display: inline-block;
+}

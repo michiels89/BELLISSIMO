@@ -57,27 +57,37 @@ if(isset($_GET['action']) && $_GET['action'] == "delete"){
     <title>Image upload</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/admin_style.css">
+       <!-- IONICONS FONT -->
+    <link rel="stylesheet" href="ionicons/css/ionicons.min.css">
 </head>
 <body>
   <?php require_once('include/menu.php');?>
+  <br><br><br><br>
    <!-------------- uploaden images --------->
-    <div id =" content">
+   <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-4 text-center" id =" content">
+            
        <h2><?php echo $msg; ?></h2>
         <form action="uploadImages.php" method="post" enctype="multipart/form-data">
             <input type="hidden" name ="size" value="1000000">
-            <div>
+             <div class="form-group bestand">
                 <input type="file" name="image">
-            </div>
-            <div>
+             </div>
+            <div class="form-group">
                 <textarea name="text" placeholder="Geef een omschrijving van de foto" cols="40" rows="4"></textarea>
             </div>
-            <div>
+            <div class="form-group">
                 <input type="submit" name="upload" value="Upload Image">
             </div>
         </form>   
     
-   </div>
-    
+   
+       </div>
+            <div class="col"></div>
+        </div>
+    </div> 
 <!-- ----------------   image galery------------------------->
      <div class="container">
 
