@@ -54,9 +54,11 @@ if(isset($_GET['action']) && $_GET['action'] == "delete"){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Image upload</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/admin_style.css">
+      
        <!-- IONICONS FONT -->
     <link rel="stylesheet" href="ionicons/css/ionicons.min.css">
 </head>

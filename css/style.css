@@ -48,16 +48,6 @@ main{
 }
 
 
-p{
-    font-size: 2rem;
-    font-family: 'raleway';
-}
-strong{
-    font-family: 'Dancing Script', cursive;
-    font-size: 4rem;
-    
-}
-
 /********************************HEAD*****************************************/
 
 .logo{
@@ -95,15 +85,42 @@ strong{
     margin: 1rem 1.2rem !important;
     background-color: #a98357 !important;
     color: white;
-    border: 2px solid black !important;
+    border: 3px solid #71583a !important;
     font-size: 2rem !important;
     height:4rem;
-    width: 20rem;
+    width: 22rem;
+    font-family: 'raleway';
+    max-width: 100%;
+
     
+}
+.btn:hover,
+.afsprakenagenda-button:hover{
+    background-color: #71583a !important;
 }
 .adres{
     
     margin-left:1.5rem;
+}
+a .adres {
+    color: black;
+    text-decoration: none;
+}
+
+/*************************MAIN*******************************************/
+
+
+p.overOns{
+    font-size: 2rem;
+    font-family: 'raleway';
+    text-align: justify;
+    
+}
+.overOns{
+    
+    width:62%;
+    margin:auto; 
+    
 }
 
 
@@ -151,7 +168,7 @@ strong{
 /******************************TreatmentView**********************************/
 .wrapperTreatment{
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-template-columns: 2fr 3fr 1fr ;
     font-size: 1.5rem;
     font-family: 'raleway';
 

@@ -21,7 +21,7 @@ require_once('admin/TreatmentList.php');
        <div class="box colH">Behandeling</div>
        <div class="box colH">Omschrijving</div>
        <div class="box colH">Prijs</div>
-       <div class="box colH">Duurtijd</div>
+       
        
         <?php
             $treat = new TreatmentList();
@@ -38,10 +38,9 @@ require_once('admin/TreatmentList.php');
                     $duurtijd = $uur . "u" . $min ."min";
                 }
             ?>    
-           <div class="box colH"><?=$treatment['naam'];?></div>
+           <div class="box"><strong><?=$treatment['naam'];?></strong></div>
            <div class="box"><?=$treatment['omschrijving'];?></div>
            <div class="box"><?=$treatment['prijs'];?></div>
-           <div class="box"><?=$duurtijd?></div>
     <?php } ?>
     </div>
        

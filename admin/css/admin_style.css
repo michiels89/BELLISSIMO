@@ -21,18 +21,16 @@ body{
     box-sizing: border-box;
     width:100%;
     margin: auto;
+/*    background-color: #e3d6c7;*/
 }
-/************************ Setting 1rem = 10px ***************/
-html {
-    font-size: 62.5%;
-}
+
 .size{
     font-size: 1.5rem;
 }
 
 /************************MENU****************************/
 .header{
-    padding-top: 5rem;
+    padding-top: 6rem;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     
@@ -41,18 +39,26 @@ html {
     float:left;
 }
 h1{
-    
     padding-top:6rem;
     padding-left: 0rem;
-
+}
+/*-----------------------------BUTTONS menu---------------------*/
+.btn {
+    border: 2px solid #a98357; 
+    background-color: transparent;
+    color: #a98357;
+}
+.btn:hover{
+    background-color: #a98357;
+    color: white;
+    border: 2px solid #71583a;
 }
 
-/*
-
-.header div{
-    display:inline-block;
+/********************MAIN**********************************/
+main{
+    width:90%;
+    margin: auto;
 }
-*/
 
 /**********************Upload Form **************************/
 
@@ -81,17 +87,6 @@ form div{
 
     
 }
-
-
-/*
-.wrapperTreatments:nth-child(odd) {
-    background: red;
-}
-
-.wrapperTreatments:nth-child(even) {
-    background: blue;
-}
-*/
 .box{
     display: inline-block;
     color: #212121;
@@ -106,19 +101,22 @@ form div{
 
 }
 .col1 {
-    background-color:  #F5F5F5;
+    background-color:  #a98357;
 }
 .col2 {
-    background-color: #EEEEEE;
+    background-color: #af8b62;
 }
 .col3 {
-    background-color: #E0E0E0;
+    background-color: #b5946d;
 }
 .col4 {
-    background-color: #BDBDBD;
+    background-color: #ba9c79;
 }
 .col5 {
-    background-color: #9E9E9E;
+    background-color: #c0a484;
+}
+.col6 {
+    background-color: #c6ac8f;
 }
 /***************************************BUTTONS*****************************/
 
@@ -136,13 +134,12 @@ label{
     
     width: 30px;
     height: 30px;
-    border: 1px solid #74b9ff;
+    border: 1px solid #a98357;
     background-color: transparent;
     
 
     padding: 0;
-    margin: 0;
-    margin-left: 0.2rem;
+    margin:auto;
 
     display: flex;
     justify-content: center;
@@ -152,7 +149,10 @@ label{
 
 
 .btnL i {
-    color: #74b9ff;
+    color: #a98357;
+}
+.btnL i:hover {
+    color: white;
 }
 
 

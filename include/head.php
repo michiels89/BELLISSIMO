@@ -21,9 +21,9 @@
             </script>
         </div> 
         <div class="contact-wrapper">
-            <h3 class="adres">Park Ter Heide 16/1</h3>
-            <h3>3271 Averbode</h3>
-            <h3>0473 / 210.156</h3>
+           <a href="https://www.google.be/maps/place/Park+Ter+Heide+16,+3271+Scherpenheuvel-Zichem/@51.0224158,4.9909947,17z/data=!4m5!3m4!1s0x47c146fd7c8f2dfd:0x5d9551807aca7d78!8m2!3d51.0224158!4d4.9931834"><h3 class="adres">Park Ter Heide 16/1</h3></a>
+            <a href="https://www.google.be/maps/place/Park+Ter+Heide+16,+3271+Scherpenheuvel-Zichem/@51.0224158,4.9909947,17z/data=!4m5!3m4!1s0x47c146fd7c8f2dfd:0x5d9551807aca7d78!8m2!3d51.0224158!4d4.9931834"><h3 class="adres">3271 Averbode</h3></a>
+           <h3>0473 / 210.156</h3>
         </div>
          
    </header>

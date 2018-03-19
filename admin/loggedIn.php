@@ -34,17 +34,20 @@ if(isset($_GET['action']) && $_GET['action'] == 'delete'){
 </head>
 <body>
    <?php require_once('include/menu.php');?>
-    <h1>Behandelingen</h1>
-       <div><p class='size'><strong>Behandeling toevoegen:</strong>
-         <a class="btn btn-primary btnL plus" href="addTreatment.php?action=add"><i class="ion-plus-round"></i></a></p> </div>
+
+    <h1>Behandelingen:</h1>
+    <main>
+           <div><p class='size'><strong>Behandeling toevoegen:</strong>
+         <a class="btn btn-primary btnL plus" href="addTreatment.php?action=add"><i class="ion-plus-round"></i></a></p> </div><br>
+         
           <div class="wrapperTreatments text-center">
-          <div class="colH">Id</div>
-          <div class="colH">Naam</div>
-          <div class="colH">Omschrijving</div>
-          <div class="colH">Prijs</div>
-          <div class="colH">Duurtijd</div>
-          <div class="colH">Aanpassen/</div>
-          <div class="colH">Verwijderen</div>
+          <div class="colH col1">Id</div>
+          <div class="colH col2">Naam</div>
+          <div class="colH col3">Omschrijving</div>
+          <div class="colH col4">Prijs</div>
+          <div class="colH col5">Duurtijd</div>
+          <div class="colH col6">Aanpassen/</div>
+          <div class="colH col6">Verwijderen</div>
         <?php
             
             $treatList = $treat->getAllTreatments();
@@ -62,14 +65,14 @@ if(isset($_GET['action']) && $_GET['action'] == 'delete'){
                 }
               ?> 
               
-            <div><?=$treatment['id'];?></div>
-            <div><?=$treatment['naam'];?></div>
-            <div><?=$treatment['omschrijving'];?></div>
-            <div><?=$treatment['prijs'];?></div>
-            <div><?=$duurtijd;?></div>
-            <div>
+            <div class="col1"><?=$treatment['id'];?></div>
+            <div class="col2"><?=$treatment['naam'];?></div>
+            <div class="col3"><?=$treatment['omschrijving'];?></div>
+            <div class="col4"><?=$treatment['prijs'];?></div>
+            <div class="col5"><?=$duurtijd;?></div>
+            <div class="col6">
             <a class="btn btn-primary btnL"href="addTreatment.php?action=replace&id=<?=$treatment['id'];?>"><i class="ion-edit"></i></a></div>
-            <div><a class="btn btn-primary btnL" href="loggedIn.php?action=delete&id=<?=$treatment['id'];?>"><i class="ion-close-round"></i></a>
+            <div class="col6"><a class="btn btn-primary btnL" href="loggedIn.php?action=delete&id=<?=$treatment['id'];?>"><i class="ion-close-round"></i></a>
             </div>
             
             
@@ -78,7 +81,7 @@ if(isset($_GET['action']) && $_GET['action'] == 'delete'){
         </div>
        
 
-   
+  </main> 
     
     
 </body>
