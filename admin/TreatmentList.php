@@ -37,18 +37,18 @@ class TreatmentList{
         $db->executeWithParam($sql, array(array(':id', $id)));
         $db = null;
     } 
-    public function updateTreatment($id, $naam, $omschrijving, $prijs, $duurTijd){
+    public function updateTreatment($id, $naam, $omschrijving, $prijs){
         $db = new Database();
-        $sql = "update treatments set naam = :naam, omschrijving = :omschrijving, prijs = :prijs, duurTijd = :duurTijd where id = :id";
-        $db->executeWithParam ($sql, array(array(':id', $id), array(':naam', $naam), array(':omschrijving', $omschrijving), array(':prijs', $prijs), array(':duurTijd', $duurTijd)));
+        $sql = "update treatments set naam = :naam, omschrijving = :omschrijving, prijs = :prijs where id = :id";
+        $db->executeWithParam ($sql, array(array(':id', $id), array(':naam', $naam), array(':omschrijving', $omschrijving), array(':prijs', $prijs)));
         $db = null;
         
     }
-    public function addTreatment($naam, $omschrijving, $prijs,  $duurTijd){
+    public function addTreatment($naam, $omschrijving, $prijs){
         $db = new Database();
-        $sql="insert into treatments (naam, omschrijving, prijs, duurTijd)
-        VALUES (:naam, :omschrijving, :prijs,:duurTijd)";
-        $db->executeWithParam ($sql, array(array(':naam', $naam), array(':omschrijving', $omschrijving), array(':prijs', $prijs), array(':duurTijd', $duurTijd)));
+        $sql="insert into treatments (naam, omschrijving, prijs)
+        VALUES (:naam, :omschrijving, :prijs)";
+        $db->executeWithParam ($sql, array(array(':naam', $naam), array(':omschrijving', $omschrijving), array(':prijs', $prijs)));
         $db = null;
     }
 }

@@ -33,12 +33,12 @@ if(isset($_POST['add'])){
     if (empty($_POST['prijs'])) {
     $errors[] = "Vul de prijs in!";
     } 
-    if (empty($_POST['duurtijd'])) {
-    $errors[] = "Duidt de duurtijd aan in minuten!";
-    } 
+//    if (empty($_POST['duurtijd'])) {
+//    $errors[] = "Duidt de duurtijd aan in minuten!";
+//    } 
     
     if(count($errors) == 0){
-        $treatL->addTreatment($_POST['naam'],$_POST['omschrijving'],$_POST['prijs'],$_POST['duurtijd']);
+        $treatL->addTreatment($_POST['naam'],$_POST['omschrijving'],$_POST['prijs']);
         echo "<script>
         window.alert('Opgeslagen');
         window.location.href='loggedIn.php';
@@ -110,6 +110,7 @@ if(isset($_POST['replace'])){
                                placeholder="Prijs"
                                name="prijs">
                     </div>
+<!--
                       <div class="form-group"> 
                         <label for="duurtijdBehandeling">Duur behandeling minuten: </label>
                         <input type="range" max="180" step="5" class="form-control" id="duurtijdBehandeling"
@@ -118,6 +119,7 @@ if(isset($_POST['replace'])){
 
                      
                     </div>
+-->
                     <button type="submit" class="btn btn-primary" name="add">Voeg toe</button>
                     <a href="loggedIn.php" class="btn btn-primary">Annuleer</a>
                     <p><?php echo implode("<br><br>", $errors);?></p>
@@ -148,6 +150,7 @@ if(isset($_POST['replace'])){
                     </div>
 
 
+<!--
                     <div class="form-group">
                         <label for="duurtijdBehandeling">Duur behandeling minuten: </label>
                         <input type="range" max="180" step="5" class="form-control" id="duurtijdBehandeling"
@@ -156,6 +159,7 @@ if(isset($_POST['replace'])){
 
                      <input type="hidden" name="id" value="<?php echo $_GET['id']?>">     
                       </div>
+-->
                     <button type="submit" class="btn btn-primary" name="replace">Vervang</button>
                     <a href="loggedIn.php" class="btn btn-primary">Annuleer</a>
                    </form>

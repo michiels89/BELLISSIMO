@@ -28,15 +28,15 @@ require_once('admin/TreatmentList.php');
             $treatList = $treat->getAllTreatments();
             foreach($treatList as $treatment){
                 // changing min in h&m
-                $uur = floor($treatment['duurTijd']/60);
-                $min = $treatment['duurTijd']%60;
-                if($uur == 0){
-                    $duurtijd = $min . "min";
-                }elseif($min == 0){
-                    $duurtijd = $uur . "u";
-                }else{
-                    $duurtijd = $uur . "u" . $min ."min";
-                }
+//                $uur = floor($treatment['duurTijd']/60);
+//                $min = $treatment['duurTijd']%60;
+//                if($uur == 0){
+//                    $duurtijd = $min . "min";
+//                }elseif($min == 0){
+//                    $duurtijd = $uur . "u";
+//                }else{
+//                    $duurtijd = $uur . "u" . $min ."min";
+//                }
             ?>    
            <div class="box"><strong><?=$treatment['naam'];?></strong></div>
            <div class="box"><?=$treatment['omschrijving'];?></div>
