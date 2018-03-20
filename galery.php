@@ -47,6 +47,7 @@ require_once('admin/ImageList.php');
                         <h3>Bellissimo</h3>
                         <p><?php print($image['text'])?></p>
                     </div>
+                    
                  </div>
                 
                  <?php } ?>

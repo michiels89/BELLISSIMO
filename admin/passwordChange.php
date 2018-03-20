@@ -88,7 +88,7 @@ require_once 'include/menu.php';?>
             <div class="col-4 text-center">
                <h1>Wachtwoord wijzigen</h1>
                 <form action="passwordChange.php" method="post">
-                    <div class="form-group size">
+                    <div class="form-group">
                         <label for="exampleInputEmail1">Huidig wachtwoord</label>
                         <input type="password" class="form-control" id="exampleInputEmail1"
                                placeholder="Huidig wachtwoord" name="password">

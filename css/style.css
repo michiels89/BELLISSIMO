@@ -55,7 +55,7 @@ main{
 }
 .img-logo{
         max-width: 100%;
-    border-bottom: 2px solid black; 
+  
 
 }
 
@@ -97,6 +97,11 @@ main{
 .btn:hover,
 .afsprakenagenda-button:hover{
     background-color: #71583a !important;
+}
+.afsprakenagenda-button span{
+   padding-top:0.8rem !important; 
+   padding-left:5rem !important;
+
 }
 .adres{
     
@@ -229,14 +234,17 @@ p.overOns{
 
 /***************************************SOCIAL MEDIA*****************************/
 
-.socialeMedia a{
-    
-    display: inline-block;
-}
 .socialeMedia-wrapper{
     
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
+    padding-top: 5rem;
+}
+
+.socialeMedia-wrapper a{
+    
+    display: inline-block;
+    padding-top: 2rem;
 }
 
 
