@@ -50,26 +50,27 @@ main{
 
 /********************************HEAD*****************************************/
 
-.logo{
-    float: left;
-}
 .img-logo{
-        max-width: 100%;
+    float:left;
+    max-width: 100%;
   
 
 }
 
 
-/************************************ BUTTONS **************************************************/
+/************************************ BUTTONS *********************************/
 
 /****************MENU******************************/
 
 .menu-wrapper{
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-row-gap: 0.2rem; 
-    padding-top:5.7rem;
+        padding-top: 5rem; 
+    margin:auto;
+}
+.menu-wrapper div{
+    display: inline-block;
+    padding: 0 2.5%;
+    max-width: 100%;
+    height: : 100%;
 }
 .contact-wrapper{
     
@@ -77,6 +78,11 @@ main{
     grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 0.2rem; 
     padding-top:6.1rem;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 
@@ -260,5 +266,22 @@ p.overOns{
     padding-top: 2rem;
 }
 
+/************************************************************LAPTOP SCREEN: ***********************************************/
+/*
 
+@media (max-width: 1400px) {
+ ***************MENU*****************************
 
+.menu-wrapper{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 0.2rem; 
+    padding-top:5.7rem;
+    margin:auto;
+}
+.contact-wrapper{
+    display: inline;
+
+}
+*/

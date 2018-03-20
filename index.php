@@ -85,7 +85,7 @@ Mijn praktijk is gelegen in Averbode en ik ontvang jou graag na afspraak, telefo
       <img src="img/IMG_3039.JPG" alt="Gel polish">
       <div class="carousel-caption">
          <h3>Bellissimo</h3>
-        <p>Natural Beauty</p>
+        
       </div>
     </div>
 
@@ -93,7 +93,7 @@ Mijn praktijk is gelegen in Averbode en ik ontvang jou graag na afspraak, telefo
       <img src="img/IMG_3045.JPG" alt="Nagel studio">
       <div class="carousel-caption">
          <h3>Bellissimo</h3>
-        <p>Natural Beauty</p>
+        
       </div>
     </div>
   </div>
