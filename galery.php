@@ -30,10 +30,6 @@ require_once('admin/ImageList.php');
               <div class="carousel-inner">
                  <div class="item active">
                       <img src="img/logo.jpg" alt="Bellissimo">
-                      <div class="carousel-caption">
-                          <h3>Bellissimo</h3>
-                          <p>Natural Beauty</p>
-                      </div>
                  </div>
                  <?php 
                  $imageList = new ImageList();
@@ -43,13 +39,9 @@ require_once('admin/ImageList.php');
 
                  <div class="item">
                     <img src="files/<?php print($image['image']);?>" alt="<?php print($image['text'])?>">
-                    <div class="carousel-caption">
-                        <h3>Bellissimo</h3>
-                        <p><?php print($image['text'])?></p>
+                    <p><?php print($image['text'])?></p>
                     </div>
                     
-                 </div>
-                
                  <?php } ?>
        
                </div>

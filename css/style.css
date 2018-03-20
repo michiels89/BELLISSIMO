@@ -213,7 +213,13 @@ p.overOns{
     margin:auto;
     
 }
-
+.carousel-control{
+    opacity: 0;
+}
+.carousel-control:hover,
+.carousel-control:active{
+    opacity: 0;
+}
 /**************************************GALERY*************************************/
 
 .wrapperImg{
@@ -230,6 +236,13 @@ p.overOns{
     width: 35rem;
     height:30rem;
     margin:auto;
+}
+.item p{
+    font-size: 2rem;
+    font-family: 'raleway';
+    text-align: justify;
+    background-color: white;
+    padding: 2rem;
 }
 
 /***************************************SOCIAL MEDIA*****************************/
