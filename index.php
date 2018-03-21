@@ -9,11 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 <!--    Open Graph to display on social media-->
-    <meta property="og:url"                content="http://localhost/BELLISSIMO/index.php" />
+    <meta property="og:url"                content="http://bellissimo-beauty.be/" />
     <meta property="og:type"               content="website" />
     <meta property="og:title"              content="Bellissimo Natural Beauty" />
-    <meta property="og:description"        content="Laat hier uw na." />
-    <meta property="og:image"              content="logo's/B.jpg"  />
+    <meta property="og:description"        content="Ik ben Nancy Volders en heb in 2018 Bellissimo opgericht te Averbode. Ik volgde verschillende opleidingen in manicure en nagelstyling. Bij Bellissimo staat de klant op de éérste plaats. Voor mij is het heel belangrijk dat de klant er goed uit ziet en zich goed voelt tijdens de behandeling. Het gebruik van professionele producten en een vlotte babbel staat hier garant voor. Mijn praktijk is gelegen in Averbode en ik ontvang jou graag na afspraak, telefonisch of via onze website." />
+<!--    <meta property="og:image"              content="http://bellissimo-beauty.be/bellissimo/img/logo.jpg"  />-->
+    <meta property="og:image"              content="http://localhost/bellissimo/index.php/img/logo.jpg"  />
     
 <!--    shortcut icon-->
     <link rel="shortcut icon" href="images/favico.png">
@@ -74,7 +75,7 @@ Mijn praktijk is gelegen in Averbode en ik ontvang jou graag na afspraak, telefo
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="img/IMG_3036.JPG" alt="Gel polish">
+      <img src="img/thumbnail_IMG_3055.jpg" alt="Gel polish">
       <div class="carousel-caption">
         <h3>Bellissimo</h3>
         
@@ -90,7 +91,7 @@ Mijn praktijk is gelegen in Averbode en ik ontvang jou graag na afspraak, telefo
     </div>
 
     <div class="item">
-      <img src="img/IMG_3045.JPG" alt="Nagel studio">
+      <img src="img/thumbnail_IMG_3052.jpg" alt="Nagel studio">
       <div class="carousel-caption">
          <h3>Bellissimo</h3>
         
@@ -111,8 +112,8 @@ Mijn praktijk is gelegen in Averbode en ik ontvang jou graag na afspraak, telefo
 <br>
 
 <!------------------------------- Load Facebook SDK for JavaScript ----------------->
-        <div id="fb-root"></div>
-        <script>(function(d, s, id) {
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
@@ -147,7 +148,7 @@ Mijn praktijk is gelegen in Averbode en ik ontvang jou graag na afspraak, telefo
           
 <!-------------------------------- Your share button code -------------------------->
     <div class="share-wrapper text-center">
-        <div class="fb-share-button" data-href="http://localhost/BELLISSIMO/index.php" data-layout="button" data-size="small" data-mobile-iframe="false"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.index.php%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Delen</a></div>
+        <div class="fb-share-button" data-href="http://bellissimo-beauty.be/" data-layout="button" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbellissimo-beauty.be%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Delen</a></div>
         
         <div class="fb-like" data-href="https://www.index.php" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
         
@@ -156,6 +157,7 @@ Mijn praktijk is gelegen in Averbode en ik ontvang jou graag na afspraak, telefo
     </div>   
        
      <br><br><br><br>
+     <iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fbellissimo-beauty.be%2F&layout=button&size=large&mobile_iframe=true&width=73&height=28&appId" width="73" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 <?php  require_once('include/socialeMedia.php');?>  
    </main>
 

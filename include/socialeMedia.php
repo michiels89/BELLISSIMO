@@ -11,7 +11,7 @@
 <img title="Pinterest" alt="Pinterest" src="https://socialmediawidgets.files.wordpress.com/2014/03/13_pinterest.png" width="35" height="35" />
 </a>
 -->
-<a class="text-center" href="https://www.facebook.com">
+<a class="text-center" href="https://www.facebook.com/Bellissimo-Beauty-554032154989719/">
 <img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="35" height="35" />
 </a>
 <!--

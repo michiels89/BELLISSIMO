@@ -5,7 +5,7 @@
            <div> <a class='btn btn-primary' href='index.php'>Home</a> </div>
            <div><a class='btn btn-primary' href='treatmentView.php'>Behandelingen</a></div>
            <div><a class='btn btn-primary' href='galery.php'>Fotogalerij</a> </div>
-           <div>  <a class="afsprakenagenda" href="https://www.afsprakenagenda.be/1221/bellissimo-natural-beauty">Maak een afspraak</a></div>
+           <div>  <a class="afsprakenagenda" href="https://www.afsprakenagenda.be/1237/bellissimo-natural-beauty">Maak een afspraak</a></div>
            
             
             
