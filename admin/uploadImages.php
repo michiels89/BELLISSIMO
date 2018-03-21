@@ -28,7 +28,7 @@ if(isset($_POST['upload'])){
     
     // move the uploade images into the folder
     if(move_uploaded_file($_FILES['image']['tmp_name'], $target)){
-        $msg = "De afbeelding werd succesvol opgeslagen";
+        $msg = "De afbeelding werd succesvol opgeslagen!";
     }else{
          $msg = "Er was een probleem bij het uploaden van de afbeelding!";
     }
@@ -71,7 +71,7 @@ if(isset($_GET['action']) && $_GET['action'] == "delete"){
             <div class="col"></div>
             <div class="col-4 text-center" id =" content">
             
-       <h2><?php echo $msg; ?></h2>
+       <h2><?php echo $msg; ?></h2><br><br>
         <form action="uploadImages.php" method="post" enctype="multipart/form-data">
             <input type="hidden" name ="size" value="1000000">
              <div class="form-group bestand">

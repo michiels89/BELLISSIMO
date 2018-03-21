@@ -36,15 +36,6 @@ main{
     
     border-left:2px solid black;
     border-right:2px solid black;
-    
-    
-/*
-    display: flex ;
-    justify-content: center;
-    align-items: center;
-    
-*/
-    
 }
 
 
@@ -146,36 +137,6 @@ p.overOns{
 }
 
 
-/* --------------- BACK AND HOME BUTTON --------------------------- */
-
-.navigation a {
-    display: flex ;
-    justify-content: center;
-    align-items: center;
-
-    transition: all .2s;
-}
-
-.navigation a img{
-    
-        
-    border: 2px solid #bb0929;
-    border-radius: 50%;
-}
-
-
-.navigation a:active,
-.navigation a:focus {
-    transform: translateY(2px);
-}
-.back,
-.home{
-    display:inline-block;
-   
-}
-.back {
-    margin-right: 2rem;
-}
 /******************************TreatmentView**********************************/
 .wrapperTreatment{
     display: grid;

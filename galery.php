@@ -39,7 +39,7 @@ require_once('admin/ImageList.php');
 
                  <div class="item">
                     <img src="files/<?php print($image['image']);?>" alt="<?php print($image['text'])?>">
-                    <p><?php print($image['text'])?></p>
+                    <p ><?php print($image['text'])?></p>
                     </div>
                     
                  <?php } ?>

@@ -4,41 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Bellissimo:Natural Beauty! Nagelstudio te .U kan hier terecht voor Manicure, Gellak: full color of french en verwijderen van gellak.">
-    <meta name="keywords" content="HTML,CSS,PHP,SQL,JavaScript, Bootstrap">
-    <meta name="author" content="Michiels Lynn">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 <!--    Open Graph to display on social media-->
     <meta property="og:url"                content="http://bellissimo-beauty.be/" />
-    <meta property="og:type"               content="website" />
+    <meta property="og:type"               content="article" />
     <meta property="og:title"              content="Bellissimo Natural Beauty" />
-    <meta property="og:description"        content="Ik ben Nancy Volders en heb in 2018 Bellissimo opgericht te Averbode. Ik volgde verschillende opleidingen in manicure en nagelstyling. Bij Bellissimo staat de klant op de éérste plaats. Voor mij is het heel belangrijk dat de klant er goed uit ziet en zich goed voelt tijdens de behandeling. Het gebruik van professionele producten en een vlotte babbel staat hier garant voor. Mijn praktijk is gelegen in Averbode en ik ontvang jou graag na afspraak, telefonisch of via onze website." />
-<!--    <meta property="og:image"              content="http://bellissimo-beauty.be/bellissimo/img/logo.jpg"  />-->
-    <meta property="og:image"              content="http://localhost/bellissimo/index.php/img/logo.jpg"  />
-    
-<!--    shortcut icon-->
-    <link rel="shortcut icon" href="images/favico.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/favico.png">
-    
-<!-- favicon genereren met afbeelding
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
--->
+    <meta property="og:description"        content="Ik ben Nancy Volders en heb in 2018 Bellissimo opgericht te Averbode. Mijn praktijk is gelegen in Averbode en ik ontvang jou graag na afspraak, telefonisch of via onze website." />
+    <meta property="og:image"              content="http://bellissimo-beauty.be/bellissimo/img/logo.jpg"  />
+
    <!-- IONICONS FONT -->
     <link rel="stylesheet" href="vendors/ionicons/css/ionicons.min.css">
     
@@ -148,16 +122,16 @@ Mijn praktijk is gelegen in Averbode en ik ontvang jou graag na afspraak, telefo
           
 <!-------------------------------- Your share button code -------------------------->
     <div class="share-wrapper text-center">
-        <div class="fb-share-button" data-href="http://bellissimo-beauty.be/" data-layout="button" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbellissimo-beauty.be%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Delen</a></div>
+        <div class="fb-share-button" data-href="http://bellissimo-beauty.be/" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbellissimo-beauty.be%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Delen</a></div>
         
-        <div class="fb-like" data-href="https://www.index.php" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+        <div class="fb-like" data-href="http://michiels-lynn.be/bellissimo/" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
         
         <div><a class="twitter-share-button"href="https://twitter.com/intent/tweet">Tweet</a></div>
         <div><a href="https://www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"></a></div>
     </div>   
        
      <br><br><br><br>
-     <iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fbellissimo-beauty.be%2F&layout=button&size=large&mobile_iframe=true&width=73&height=28&appId" width="73" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
 <?php  require_once('include/socialeMedia.php');?>  
    </main>
 
