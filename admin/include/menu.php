@@ -12,6 +12,7 @@
     <div class="logo"><a href="../admin/loggedIn.php"><img src="../img/logo.jpg"></a></div>
     <div class="header text-center">
 
+         <div><a class='btn btn-primary' href='loggedIn.php'>Behandelingen</a></div>
          <div><a class='btn btn-primary' href='newUser.php'>Nieuwe gebruiker</a></div>
          <div><a class='btn btn-primary' href='uploadImages.php'>Foto's toevoegen</a></div>
          <div><a class='btn btn-primary' href='userDelete.php'>User verwijderen</a></div>
