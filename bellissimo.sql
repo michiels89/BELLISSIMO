@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 20 mrt 2018 om 17:29
+-- Gegenereerd op: 21 mrt 2018 om 17:37
 -- Serverversie: 10.1.28-MariaDB
 -- PHP-versie: 7.1.11
 
@@ -40,16 +40,13 @@ CREATE TABLE `images` (
 --
 
 INSERT INTO `images` (`id`, `image`, `date`, `text`) VALUES
-(2, 'nails1.jfif', '2018-03-01 15:03:41', 'ghhhhLorem ipsum dolor sit amet, consectetur adipisicing elit. Minus blanditiis labore ducimus quasi quisquam, voluptatibus est. Eos exercitationem cumque quisquam natus sapiente illum eaque, debitis officia quibusdam voluptatibus, architecto quas!'),
-(5, 'nails4.jfif', '2018-03-01 15:04:05', 'ghhhhhhhhhhhhhhhLorem ipsum dolor sit amet, consectetur adipisicing elit. Minus blanditiis labore ducimus quasi quisquam, voluptatibus est. Eos exercitationem cumque quisquam natus sapiente illum eaque, debitis officia quibusdam voluptatibus, architecto quasLorem ipsum dolor sit amet, consectetur adipisicing elit. Minus blanditiis labore ducimus quasi quisquam, voluptatibus est. Eos exercitationem cumque quisquam natus sapiente illum eaque, debitis officia quibusdam voluptatibus, architecto quas!!hhhhhhhhhhhhhhhhhhhhhh'),
-(20, 'images (2).jpg', '2018-03-02 11:14:25', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus blanditiis labore ducimus quasi quisquam, voluptatibus est. Eos exercitationem cumque quisquam natus sapiente illum eaque, debitis officia quibusdam voluptatibus, architecto quas!'),
-(21, 'download (1).jpg', '2018-03-02 14:13:53', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus blanditiis labore ducimus quasi quisquam, voluptatibus est. Eos exercitationem cumque quisquam natus sapiente illum eaque, debitis officia quibusdam voluptatibus, architecto quas!'),
-(22, 'download.jpg', '2018-03-02 14:14:09', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus blanditiis labore ducimus quasi quisquam, voluptatibus est. Eos exercitationem cumque quisquam natus sapiente illum eaque, debitis officia quibusdam voluptatibus, architecto quas!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus blanditiis labore ducimus quasi quisquam, voluptatibus est. Eos exercitationem cumque quisquam natus sapiente illum eaque, debitis officia quibusdam voluptatibus, architecto quas!'),
-(23, 'images (1).jpg', '2018-03-02 14:14:18', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus blanditiis labore ducimus quasi quisquam, voluptatibus est. Eos exercitationem cumque quisquam natus sapiente illum eaque, debitis officia quibusdam voluptatibus, architecto quas!'),
-(24, 'images (3).jpg', '2018-03-02 14:14:30', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus blanditiis labore ducimus quasi quisquam, voluptatibus est. Eos exercitationem cumque quisquam natus sapiente illum eaque, debitis officia quibusdam voluptatibus, architecto quas!'),
-(25, 'images.jpg', '2018-03-02 14:14:36', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus blanditiis labore ducimus quasi quisquam, voluptatibus est. Eos exercitationem cumque quisquam natus sapiente illum eaque, debitis officia quibusdam voluptatibus, architecto quas!'),
-(26, 'download.jpg', '2018-03-02 14:15:20', 'sssssssss ssssssssssssssss sssssssssssssss ssssssssssssssssssssssssssssssssssssssssssssss sssssssssssssssssssssssssssssssssssssssss'),
-(27, 'images (1).jpg', '2018-03-02 14:16:30', 'ssssssssssssssss sssssssssssssssssss sssssssssssssssssss ');
+(29, 'IMG_3031.JPG', '2018-03-21 17:25:36', ''),
+(30, 'thumbnail_IMG_3055.jpg', '2018-03-21 17:26:07', ''),
+(31, 'thumbnail_IMG_3055.jpg', '2018-03-21 17:27:54', ''),
+(32, 'IMG_3040.JPG', '2018-03-21 17:28:16', 'wdf wsdgf qs qg '),
+(33, 'IMG_3040.JPG', '2018-03-21 17:28:32', 'wdf wsdgf qs qg '),
+(34, 'IMG_3040.JPG', '2018-03-21 17:30:35', 'wdf wsdgf qs qg '),
+(35, 'IMG_3040.JPG', '2018-03-21 17:31:10', 'wdf wsdgf qs qg ');
 
 -- --------------------------------------------------------
 
@@ -69,7 +66,8 @@ CREATE TABLE `password_reset_request` (
 --
 
 INSERT INTO `password_reset_request` (`id`, `userId`, `date_requested`, `token`) VALUES
-(1, 1, '2018-02-27 12:06:15', '47522a503200106693d4ebe804079d35');
+(1, 1, '2018-02-27 12:06:15', '47522a503200106693d4ebe804079d35'),
+(2, 4, '2018-03-20 17:53:48', '98ad63e7d35e312027533dee2ab8ca3c');
 
 -- --------------------------------------------------------
 
@@ -93,7 +91,8 @@ INSERT INTO `treatments` (`id`, `naam`, `prijs`, `omschrijving`) VALUES
 (2, 'Gellak: full color', 28, 'Deze wordt op de natuurlijke nagel aangebracht. De textuur van gellak is iets dikker dan een gewone nagellak, blijft een 3 tal weken zitten en geeft de nagels meer stevigheid. Na het aanbrengen wordt deze uitgehard onder een LED lamp. Full color: keuze uit verschillende kleuren.'),
 (3, 'Gellak : french', 30, 'Deze wordt op de natuurlijke nagel aangebracht. De textuur van gellak is iets dikker dan een gewone nagellak, blijft een 3 tal weken zitten en geeft de nagels meer stevigheid. Na het aanbrengen wordt deze uitgehard onder een LED lamp. French : met een wit randje.'),
 (4, 'lol', 35, 'qsdqd qd q qsd dfg dfdg'),
-(5, 'sfsdf', 45, 'sdfsd hfghfgh');
+(5, 'sfsdf', 45, 'sdfsd hfghfgh'),
+(6, 'sdfsdfs', 25, 'sdfs sf sg ds ');
 
 -- --------------------------------------------------------
 
@@ -114,7 +113,8 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `email`, `paswoord`) VALUES
 (1, 'admin@admin.com', '$2y$10$.rmA5OCVoKRe/AO2tAcqrO52w5qeo08gkNOBCydC7u4yX.7J/NRP6'),
 (2, 'dummy@gmail.com', '$2y$10$Q/Ct8hQ.peo2tLkEqHjLZuqywe2DHdcVdci82fDnnoHR49aLOeRAi'),
-(3, 'vdab@gmail.com', '$2y$10$UJNdAbusN6MD7xfgRvbkYuVKd7ax7j39957XacBY0DucRow9nQt5y');
+(3, 'vdab@gmail.com', '$2y$10$UJNdAbusN6MD7xfgRvbkYuVKd7ax7j39957XacBY0DucRow9nQt5y'),
+(4, 'michiels89@hotmail.com', '$2y$10$7m1bpE8FeBX2ZZt4scnKTuhZZJZol41QHwPJqWoBSsApNVty0iHnm');
 
 --
 -- Indexen voor geëxporteerde tabellen
@@ -152,25 +152,25 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT voor een tabel `images`
 --
 ALTER TABLE `images`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
 -- AUTO_INCREMENT voor een tabel `password_reset_request`
 --
 ALTER TABLE `password_reset_request`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT voor een tabel `treatments`
 --
 ALTER TABLE `treatments`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT voor een tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

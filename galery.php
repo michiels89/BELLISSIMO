@@ -4,10 +4,11 @@ require_once('admin/ImageList.php');
 
 
 <!DOCTYPE html>
-<html>
+<html lang="nl-BE">
     <head>
         <meta charset="UTF-8">
         <title>Galerij</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- IONICONS FONT -->
         <link rel="stylesheet" href="vendors/ionicons/css/ionicons.min.css">
     

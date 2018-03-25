@@ -1,16 +1,15 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl-BE">
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Bellissimo:Natural Beauty! Nagelstudio te .U kan hier terecht voor Manicure, Gellak: full color of french en verwijderen van gellak.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 <!--    Open Graph to display on social media-->
-    <meta property="og:url"                content="http://bellissimo-beauty.be/" />
-    <meta property="og:type"               content="article" />
-    <meta property="og:title"              content="Bellissimo Natural Beauty" />
-    <meta property="og:description"        content="Ik ben Nancy Volders en heb in 2018 Bellissimo opgericht te Averbode. Mijn praktijk is gelegen in Averbode en ik ontvang jou graag na afspraak, telefonisch of via onze website." />
+    <meta property="og:url"                content="http://bellissimo-beauty.be/bellissimo/index.php" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="Bellissimo  Natural Beauty" />
+    <meta property="og:description"        content="Ik ben Nancy Volders en heb in 2018 mijn nagelstudio Bellissimo opgericht te Averbode. Mijn praktijk is gelegen in Averbode en ik ontvang jou graag na afspraak, telefonisch of via onze website." />
     <meta property="og:image"              content="http://bellissimo-beauty.be/bellissimo/img/logo.jpg"  />
 
    <!-- IONICONS FONT -->
@@ -124,7 +123,7 @@ Mijn praktijk is gelegen in Averbode en ik ontvang jou graag na afspraak, telefo
     <div class="share-wrapper text-center">
         <div class="fb-share-button" data-href="http://bellissimo-beauty.be/" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbellissimo-beauty.be%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Delen</a></div>
         
-        <div class="fb-like" data-href="http://michiels-lynn.be/bellissimo/" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+        <div class="fb-like" data-href="http://bellissimo-beauty.be/" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
         
         <div><a class="twitter-share-button"href="https://twitter.com/intent/tweet">Tweet</a></div>
         <div><a href="https://www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"></a></div>

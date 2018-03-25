@@ -14,7 +14,7 @@
 
          <div><a class='btn btn-primary' href='newUser.php'>Nieuwe gebruiker</a></div>
          <div><a class='btn btn-primary' href='uploadImages.php'>Foto's toevoegen</a></div>
-         <div><a class='btn btn-primary' href='UserDelete.php'>User verwijderen</a></div>
+         <div><a class='btn btn-primary' href='userDelete.php'>User verwijderen</a></div>
 
          <div><a class='btn btn-primary' href='passwordChange.php'>Wijzig wachtwoord</a></div>
 
