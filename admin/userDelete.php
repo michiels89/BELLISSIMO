@@ -1,5 +1,5 @@
 <?php
-require_once '../Database.php';
+require_once '../DataBase.php';
 if (!isset($_SESSION)) {
     session_start();
 }
@@ -29,7 +29,7 @@ $db =null;
 ?>
 
 <!doctype html>
-<html lang="en">
+<html lang="nl-BE">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">

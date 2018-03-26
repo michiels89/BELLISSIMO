@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once '../Database.php';
+require_once '../DataBase.php';
 $db = new Database();
 $errors = [];
 //php for password change
@@ -33,7 +33,7 @@ if (isset($_POST['create'])) {
 }
 ?>
 <!doctype html>
-<html lang="en">
+<html lang="nl-BE">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"

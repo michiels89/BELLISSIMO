@@ -23,7 +23,7 @@ if(isset($_GET['action']) && $_GET['action'] == 'delete'){
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl-BE">
 <head>
     <meta charset="UTF-8">
     <title>Admin Home</title>
@@ -45,31 +45,17 @@ if(isset($_GET['action']) && $_GET['action'] == 'delete'){
           <div class="colH col2">Naam</div>
           <div class="colH col3">Omschrijving</div>
           <div class="colH col4">Prijs</div>
-<!--          <div class="colH col5">Duurtijd</div>-->
           <div class="colH col6">Aanpassen/</div>
           <div class="colH col6">Verwijderen</div>
         <?php
-            
             $treatList = $treat->getAllTreatments();
             foreach($treatList as $treatment){
-            
-            // changing min in h&m
-//                $uur = floor($treatment['duurTijd']/60);
-//                $min = $treatment['duurTijd']%60;
-//                if($uur == 0){
-//                    $duurtijd = $min . "min";
-//                }elseif($min == 0){
-//                    $duurtijd = $uur . "u";
-//                }else{
-//                    $duurtijd = $uur . "u" . $min ."min";
-//                }
-              ?> 
+        ?> 
               
             <div class="col1"><?=$treatment['id'];?></div>
             <div class="col2"><?=$treatment['naam'];?></div>
             <div class="col3"><?=$treatment['omschrijving'];?></div>
             <div class="col4"><?=$treatment['prijs'];?></div>
-<!--            <div class="col5"><?=$duurtijd;?></div>-->
             <div class="col6">
             <a class="btn btn-primary btnL"href="addTreatment.php?action=replace&id=<?=$treatment['id'];?>"><i class="ion-edit"></i></a></div>
             <div class="col6"><a class="btn btn-primary btnL" href="loggedIn.php?action=delete&id=<?=$treatment['id'];?>"><i class="ion-close-round"></i></a>

@@ -1,5 +1,5 @@
 <?php
-require '../Database.php';
+require '../DataBase.php';
 if (!isset($_SESSION)) {
     session_start();
 }
@@ -73,7 +73,7 @@ if (isset($_POST['register'])) {
 }
 ?>
 <!doctype html>
-<html>
+<html lang="nl-BE">
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/admin-style.css">

@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once '../Database.php';
+require_once '../DataBase.php';
 require_once '../functions.php';
 $errors = [];
 
@@ -83,7 +83,7 @@ if (isset($_POST['reset'])) {
 
 ?>
 <!doctype html>
-<html lang="en">
+<html lang="nl-BE">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"

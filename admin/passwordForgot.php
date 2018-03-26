@@ -1,5 +1,5 @@
 <?php
-require_once '../Database.php';
+require_once '../DataBase.php';
 if (!isset($_SESSION)) {
     session_start();
 }

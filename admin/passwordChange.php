@@ -1,6 +1,6 @@
 <?php
 
-require_once '../Database.php';
+require_once '../DataBase.php';
 
 if (!isset($_SESSION)) {
     session_start();
@@ -67,7 +67,7 @@ if (isset($_POST['change'])) {
 
 ?>
 <!doctype html>
-<html lang="en">
+<html lang="nl-BE">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"

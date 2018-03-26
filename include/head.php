@@ -2,10 +2,10 @@
    <a class="logo" href="index.php" name="1"><img class="img-logo" src="img/logo.jpg"></a>
  <!-------------------------------menu----------------------------------------------->
       <div class="menu-wrapper text-center">
-           <div> <a class='btn btn-primary' href='index.php'>Home</a> </div>
+           <div><a class='btn btn-primary' href='index.php'>Home</a> </div>
            <div><a class='btn btn-primary' href='treatmentView.php'>Behandelingen</a></div>
            <div><a class='btn btn-primary' href='galery.php'>Fotogalerij</a> </div>
-           <div>  <a class="afsprakenagenda" href="https://www.afsprakenagenda.be/1237/bellissimo-natural-beauty">Maak een afspraak</a></div>
+           <div><a class='btn btn-primary'href="https://www.afsprakenagenda.be/1237/bellissimo-natural-beauty">Maak een afspraak</a></div>
            
             
             

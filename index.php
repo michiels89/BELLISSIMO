@@ -2,18 +2,16 @@
 <html lang="nl-BE">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Bellissimo:Natural Beauty! Nagelstudio te .U kan hier terecht voor Manicure, Gellak: full color of french en verwijderen van gellak.">
+    <meta name="robots" content="all">
+    <meta name="description" content="Bellissimo:Natural Beauty! Nagelstudio te Averbode.U kan hier terecht voor Manicure, Gellak: full color of french en verwijderen van gellak.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 <!--    Open Graph to display on social media-->
-    <meta property="og:url"                content="http://bellissimo-beauty.be/bellissimo/index.php" />
+    <meta property="og:url"                content="http://bellissimo-beauty.be" />
     <meta property="og:type"               content="website" />
     <meta property="og:title"              content="Bellissimo  Natural Beauty" />
     <meta property="og:description"        content="Ik ben Nancy Volders en heb in 2018 mijn nagelstudio Bellissimo opgericht te Averbode. Mijn praktijk is gelegen in Averbode en ik ontvang jou graag na afspraak, telefonisch of via onze website." />
-    <meta property="og:image"              content="http://bellissimo-beauty.be/bellissimo/img/logo.jpg"  />
-
-   <!-- IONICONS FONT -->
-    <link rel="stylesheet" href="vendors/ionicons/css/ionicons.min.css">
+    <meta property="og:image"              content="http://bellissimo-beauty.be/img/logo.jpg"  />
     
 <!--    stylesheets-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -41,6 +39,9 @@ Mijn praktijk is gelegen in Averbode en ik ontvang jou graag na afspraak, telefo
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
     <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+    <li data-target="#myCarousel" data-slide-to="5"></li>
 
     
   </ol>
@@ -48,7 +49,7 @@ Mijn praktijk is gelegen in Averbode en ik ontvang jou graag na afspraak, telefo
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="img/thumbnail_IMG_3055.jpg" alt="Gel polish">
+      <img src="img/IMG_3061.JPG" alt="Nagel studio">
       <div class="carousel-caption">
         <h3>Bellissimo</h3>
         
@@ -64,7 +65,28 @@ Mijn praktijk is gelegen in Averbode en ik ontvang jou graag na afspraak, telefo
     </div>
 
     <div class="item">
-      <img src="img/thumbnail_IMG_3052.jpg" alt="Nagel studio">
+      <img src="img/IMG_3031.JPG" alt="Gel polish">
+      <div class="carousel-caption">
+         <h3>Bellissimo</h3>
+        
+      </div>
+    </div>
+        <div class="item">
+      <img src="img/IMG_3070.JPG" alt="Gel polish">
+      <div class="carousel-caption">
+         <h3>Bellissimo</h3>
+        
+      </div>
+    </div>
+        <div class="item">
+      <img src="img/IMG_3060.JPG" alt="Gel polish">
+      <div class="carousel-caption">
+         <h3>Bellissimo</h3>
+        
+      </div>
+    </div>
+        <div class="item">
+      <img src="img/IMG_3078.JPG" alt="Gel polish">
       <div class="carousel-caption">
          <h3>Bellissimo</h3>
         

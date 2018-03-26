@@ -1,20 +1,7 @@
-
 <?php
-//Creation of admin user
-
-//require_once '../Database.php';
-//$db = new Database();
-//$email = 'admin@admin.com';
-//$password = 'admin';
-//$sql = 'INSERT INTO users ( email, paswoord)
-//        VALUES (:email, :password)';
-//
-//$passwordHashed = password_hash($password, PASSWORD_BCRYPT);
-//$db->executeWithParam ($sql, array(array(':email', $email), array(':password', $passwordHashed)));
-//$db = null;
-
 session_start();
-require_once '../Database.php';
+
+require_once '../DataBase.php';
 $db = new Database();
 $errors = [];
 if (isset($_SESSION['email'])) {
@@ -64,13 +51,14 @@ if (isset($_POST['login'])) {
 ?>
 
 <!doctype html>
-<html lang="en">
+<html lang="nl-BE">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/admin_style.css">
     <title>Bellisimo Login</title>
 </head>
@@ -94,7 +82,7 @@ if (isset($_POST['login'])) {
 <!--            <br>-->
             <a class="btn btn-primary size" href="passwordReset.php">Reset wachtwoord</a>
 <!--            <br><br>-->
-            <p class ="text-center errors"><?php echo implode("<br><br>", $errors);?></p>
+            <p class="text-center errors"><?php echo implode("<br><br>", $errors);?></p>
         </div>
         <div class="col"></div>
     </div>
