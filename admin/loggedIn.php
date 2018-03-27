@@ -30,7 +30,7 @@ if(isset($_GET['action']) && $_GET['action'] == 'delete'){
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/admin_style.css">
         <!-- IONICONS FONT -->
-    <link rel="stylesheet" href="ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="ionicons-2.0.1/css/ionicons.min.css">
 </head>
 <body>
    <?php require_once('include/menu.php');?>
@@ -65,7 +65,6 @@ if(isset($_GET['action']) && $_GET['action'] == 'delete'){
         <?php    }
             ?>
         </div>
-       
 
   </main> 
     

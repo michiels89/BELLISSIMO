@@ -130,6 +130,7 @@ if(isset($_POST['replace'])){
                                value="<?=$treatment['prijs'];?>"
                                name="prijs">
                     </div>
+                    <input type="hidden" name="id" value="<?=$treatment['id'];?>">
                     <button type="submit" class="btn btn-primary" name="replace">Vervang</button>
                     <a href="loggedIn.php" class="btn btn-primary">Annuleer</a>
                    </form>

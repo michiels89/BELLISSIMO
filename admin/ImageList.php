@@ -1,5 +1,5 @@
 <?php
-if (strpos($_SERVER['REQUEST_URI'],'galery') >= 0) { 
+if (strpos($_SERVER['REQUEST_URI'],'galery') > 1) { 
     require_once('DataBase.php');              
 } else { 
     require_once('../DataBase.php');

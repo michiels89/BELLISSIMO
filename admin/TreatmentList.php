@@ -1,6 +1,5 @@
 <?php
-if (strpos($_SERVER['REQUEST_URI'],'loggedIn') >=0
-    || strpos($_SERVER['REQUEST_URI'],'addTreatment') >=0 ) { 
+if (strpos($_SERVER['REQUEST_URI'],'loggedIn') > 1 || strpos($_SERVER['REQUEST_URI'],'addTreatment') > 1 ) { 
 
     require_once('../DataBase.php');              
 } else { 

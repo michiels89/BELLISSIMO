@@ -9,9 +9,6 @@ require_once('admin/ImageList.php');
         <meta charset="UTF-8">
         <title>Galerij</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- IONICONS FONT -->
-        <link rel="stylesheet" href="vendors/ionicons/css/ionicons.min.css">
-    
         <!--    stylesheets-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">

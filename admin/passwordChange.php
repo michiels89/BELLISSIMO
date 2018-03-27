@@ -77,15 +77,14 @@ if (isset($_POST['change'])) {
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
           <link rel="stylesheet" href="css/admin_style.css">
 </head>
-<!-- Including header -->
-<?php require_once('include/header.php');
-require_once 'include/menu.php';?>
+
 <body>
-    
+    <!-- Including header -->
+<?php require_once 'include/menu.php';?>
     <div class="container">
         <div class="row">
             <div class="col"></div>
-            <div class="col-4 text-center">
+            <div class="col-8 text-center">
                <h1>Wachtwoord wijzigen</h1>
                 <form action="passwordChange.php" method="post">
                     <div class="form-group">

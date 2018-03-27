@@ -1,6 +1,7 @@
 <?php
-require_once('../DataBase.php');
+//require_once('../DataBase.php');
 require_once('ImageList.php');
+
 
 if (!isset($_SESSION)) {
     session_start();
@@ -58,9 +59,8 @@ if(isset($_GET['action']) && $_GET['action'] == "delete"){
     <title>Image upload</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/admin_style.css">
-      
-       <!-- IONICONS FONT -->
-    <link rel="stylesheet" href="ionicons/css/ionicons.min.css">
+        <!-- IONICONS FONT -->
+    <link rel="stylesheet" href="ionicons-2.0.1/css/ionicons.min.css">
 </head>
 <body>
   <?php require_once('include/menu.php');?>
