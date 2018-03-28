@@ -1,10 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="nl-BE">
 <head>
     <meta charset="UTF-8">
-    <meta name="robots" content="all">
+<!--    For search engines-->
+    <meta name="robots" content="index, follow">
     <meta name="description" content="Bellissimo:Natural Beauty! Nagelstudio te Averbode.U kan hier terecht voor Manicure, Gellak: full color of french en verwijderen van gellak.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--   View -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
 <!--    Open Graph to display on social media-->
     <meta property="og:url"                content="http://bellissimo-beauty.be" />
@@ -72,7 +76,7 @@ Mijn praktijk is gelegen in Averbode en ik ontvang jou graag na afspraak, telefo
       </div>
     </div>
         <div class="item">
-      <img src="img/IMG_3070.JPG" alt="Gel polish">
+      <img src="img/IMG_3070.JPG" alt="instruments">
       <div class="carousel-caption">
          <h3>Bellissimo</h3>
         
@@ -143,15 +147,16 @@ Mijn praktijk is gelegen in Averbode en ik ontvang jou graag na afspraak, telefo
           
 <!-------------------------------- Your share button code -------------------------->
     <div class="share-wrapper text-center">
-        <div class="fb-share-button" data-href="http://bellissimo-beauty.be/" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbellissimo-beauty.be%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Delen</a></div>
-        
+               
         <div class="fb-like" data-href="http://bellissimo-beauty.be/" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
-        
+        <div class="fb-share-button" data-href="http://bellissimo-beauty.be/" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbellissimo-beauty.be%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Delen</a></div>
+
         <div><a class="twitter-share-button"href="https://twitter.com/intent/tweet">Tweet</a></div>
         <div><a href="https://www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"></a></div>
     </div>   
        
-     <br><br><br><br>
+     <br><br><br>
+     
 
 <?php  require_once('include/socialeMedia.php');?>  
    </main>

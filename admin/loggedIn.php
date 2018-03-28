@@ -27,9 +27,12 @@ if(isset($_GET['action']) && $_GET['action'] == 'delete'){
 <head>
     <meta charset="UTF-8">
     <title>Admin Home</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- STYLES-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/admin_style.css">
-        <!-- IONICONS FONT -->
+<!-- IONICONS FONT -->
     <link rel="stylesheet" href="ionicons-2.0.1/css/ionicons.min.css">
 </head>
 <body>
