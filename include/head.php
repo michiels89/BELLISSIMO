@@ -1,10 +1,10 @@
    <header>
-   <a class="logo" href="index.php" name="1"><img class="img-logo" src="img/logo.jpg"></a>
+   <a class="logo" href="http://bellissimo-beauty.be/" name="1"><img class="img-logo" src="img/logo.jpg"></a>
  <!-------------------------------menu----------------------------------------------->
       <div class="menu-wrapper text-center clearfix">
-           <div><a class='btn btn-primary' href='index.php'>Home</a> </div>
-           <div><a class='btn btn-primary' href='treatmentView.php'>Behandelingen</a></div>
-           <div><a class='btn btn-primary' href='galery.php'>Fotogalerij</a> </div>
+           <div><a class='btn btn-primary' href='http://bellissimo-beauty.be/index.php'>Home</a> </div>
+           <div><a class='btn btn-primary' href='http://bellissimo-beauty.be/treatmentView.php'>Behandelingen</a></div>
+           <div><a class='btn btn-primary' href='http://bellissimo-beauty.be/galery.php'>Fotogalerij</a> </div>
            <div> <a class='btn btn-primary' href="https://www.afsprakenagenda.be/1237/bellissimo-natural-beauty" onclick="window.open('https://www.afsprakenagenda.be/1237/bellissimo-natural-beauty','Bellissimo', 'width=600,height=600,left=600,top=250,scrollbars=no,toolbar=no,location=no'); return false">Maak een afspraak</a></div>
       </div> 
       <div class="contact-wrapper text-center">

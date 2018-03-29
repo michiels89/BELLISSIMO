@@ -146,11 +146,11 @@ Mijn praktijk is gelegen in Averbode en ik ontvang jou graag na afspraak, telefo
          
           
 <!-------------------------------- Your share button code -------------------------->
-    <div class="share-wrapper text-center">
-               
-        <div class="fb-like" data-href="http://bellissimo-beauty.be/" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
-        <div class="fb-share-button" data-href="http://bellissimo-beauty.be/" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbellissimo-beauty.be%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Delen</a></div>
+    <div class="share-wrapper clearfix text-center">
 
+        <div class="fb-share-button" data-href="http://bellissimo-beauty.be/" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbellissimo-beauty.be%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Delen</a></div>
+                       
+        <div class="fb-like" data-href="http://bellissimo-beauty.be/" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
         <div><a class="twitter-share-button"href="https://twitter.com/intent/tweet">Tweet</a></div>
         <div><a href="https://www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"></a></div>
     </div>   

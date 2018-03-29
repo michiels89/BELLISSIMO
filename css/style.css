@@ -73,7 +73,7 @@ main{
 .clearfix::after {
     content: "";
     clear: both;
-    display: table;
+
 }
 
 
@@ -125,13 +125,12 @@ p.overOns{
 
 .share-wrapper{
     width:62%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-row-gap: 0.2rem; 
-    margin:auto
+    margin:auto;
     
+}
+.share-wrapper div{
+    float:left;
+    margin: 1rem 7rem;
 }
 
 
@@ -242,8 +241,15 @@ section{
 
 
 /************************************************************SMALL SCREENS: ***********************************************/
+@media all and (max-width: 1820px){
+    
+    .share-wrapper div{
+    margin: 1rem 3.5rem;
+}
 
-@media all and (max-width: 800px){
+}
+
+@media all and (max-width: 1275px){
     .overOns{
         width:100%;
     }
@@ -256,7 +262,7 @@ section{
 
 }
 
-@media all and (max-width: 660px){
+@media all and (max-width: 730px){
     
     section{
         width:100%;
@@ -282,10 +288,8 @@ section{
         
         margin: 1rem auto;
     }
-    .share-wrapper{
-        -ms-grid-template-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-
-        
-    }
+    .share-wrapper div{
+        margin: 1rem 1.5rem;
 }
+}
+
