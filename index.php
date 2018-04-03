@@ -29,8 +29,50 @@
     <title>Bellissimo</title>
 </head>
 <body>
-<?php require_once('include/head.php'); ?>
-   
+<?php require_once('include/head.php'); 
+      require_once('admin/promoList.php'); 
+      $promo= new promoList();
+    ?>
+  
+<!---------------------------------------  POPUP PROMO------------>
+  
+   <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="<?php print($promo["foto"]);?>" alt="promo foto">
+    <p><?php print($promo["omschrijving"]);?></p>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+window.onload = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+  
    <main>
    <h1 class="overOns"><strong>Over ons: </strong></h1><br>
    <p class="overOns">Ik ben Nancy Volders en heb in 2018 <em><strong>Bellissimo</strong></em> opgericht te Averbode. Ik volgde verschillende opleidingen in manicure en nagelstyling.
