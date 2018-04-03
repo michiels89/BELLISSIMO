@@ -77,12 +77,12 @@ if (isset($_POST['reset'])) {
                 'X-Mailer: PHP/' . phpversion();
 
             
-            mail($to, $subject, $message, $headers)
+            mail($to, $subject, $message, $headers);
             
             }
         }
     }
-}
+
 
 ?>
 <!doctype html>

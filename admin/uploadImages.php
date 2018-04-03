@@ -1,7 +1,6 @@
 <?php
-//require_once('../DataBase.php');
 require_once('ImageList.php');
-
+require_once('promoList.php');
 
 if (!isset($_SESSION)) {
     session_start();
@@ -11,10 +10,37 @@ if (!isset($_SESSION)) {
 if (!isset($_SESSION['email'])) {
     header("Location:index.php");
 }
+//new object promoList
+$promoList = new promoList();
 
 
-// if upload button is pressed
 $msg = "";
+// if vervang promo is clicked
+if(isset($_POST['replace'])){
+    // the path to store the uploaded image
+    $target = "../files/".basename($_FILES['image']['name']);
+
+    // get al the submitted data from the form
+    $image = $_FILES['image']['name'];
+    $text = $_POST["omschrijving"];
+    
+    //update promo
+    $promoList->replacePromo($image,$text);
+
+    // move the uploade images into the folder
+    if(move_uploaded_file($_FILES['image']['tmp_name'], $target)){
+        $file = $_POST["previousImg"];
+        $targetDelete = "../files/".$file;
+        unlink($targetDelete);
+        $msg = "De promo werd succesvol aangepast!";
+    }else{
+         $msg = "Er was een probleem bij het uploaden van de afbeelding! Probeer het opnieuw.";
+    }
+    
+}
+
+// if upload button is clicked
+$msg2 = "";
 if(isset($_POST['upload'])){
     // the path to store the uploaded image
     $target = "../files/".basename($_FILES['image']['name']);
@@ -29,9 +55,9 @@ if(isset($_POST['upload'])){
     
     // move the uploade images into the folder
     if(move_uploaded_file($_FILES['image']['tmp_name'], $target)){
-        $msg = "De afbeelding werd succesvol opgeslagen!";
+        $msg2 = "De afbeelding werd succesvol opgeslagen!";
     }else{
-         $msg = "Er was een probleem bij het uploaden van de afbeelding!";
+         $msg2 = "Er was een probleem bij het uploaden van de afbeelding!";
     }
     
 }
@@ -43,6 +69,9 @@ $imageList = new ImageList();
 if(isset($_GET['action']) && $_GET['action'] == "delete"){
     
     $imageList->deleteImage($_GET['id']);
+    $file = $_GET["image"];
+        $targetDelete = "../files/".$file;
+        unlink($targetDelete);
         echo("<script>
     window.alert('Item is verwijderd.');
     </script>");
@@ -65,13 +94,47 @@ if(isset($_GET['action']) && $_GET['action'] == "delete"){
 <body>
   <?php require_once('include/menu.php');?>
   <br><br><br><br>
+     <!-------------- REPLACE PROMO --------->
+     <?php $promo = $promoList->getPromo(); ?>
+   <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-4 text-center" id =" content">
+        <h1>Promo</h1>   
+        <h3><?php echo $msg; ?></h3><br><br>
+        <form action="uploadImages.php" method="post" enctype="multipart/form-data">
+            <input type="hidden" name ="size" value="1000000">
+            <input type="hidden" name="previousImg" value="<?php print($promo['foto']);?>">
+             <div class="form-group bestand">
+                <input type="file" name="image">
+             </div>
+            <div class="form-group">
+                <textarea name="omschrijving" placeholder="Geef wat uitleg voor de promo" cols="40" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" name="replace" value="Vervang promo">
+            </div>
+        </form>   
+            </div>
+            <div class="col"></div>
+        </div>
+    </div> 
+     <!-- PROMO-->
+    <div class="container">
+        <div class='wrapperImg'>
+            <img class='galeryImg'src='../files/<?php print($promo['foto']);?>'>
+            <p><?php print($promo['omschrijving'])?></p>
+        </div>
+
+    </div>
+    
    <!-------------- uploaden images --------->
    <div class="container">
         <div class="row">
             <div class="col"></div>
             <div class="col-4 text-center" id =" content">
-            
-       <h2><?php echo $msg; ?></h2><br><br>
+       <h1>Foto's</h1>     
+       <h3><?php echo $msg2; ?></h3><br><br>
         <form action="uploadImages.php" method="post" enctype="multipart/form-data">
             <input type="hidden" name ="size" value="1000000">
              <div class="form-group bestand">
@@ -102,7 +165,7 @@ if(isset($_GET['action']) && $_GET['action'] == "delete"){
         <div class='wrapperImg'>
             <img class='galeryImg'src='../files/<?php print($image['image']);?>'>
             <p><?php print($image['text'])?></p>
-            <div><a class="btn btn-primary btnL" href="uploadImages.php?action=delete&id=<?=$image['id'];?>"><i class="ion-close-round"></i></a>
+            <div><a class="btn btn-primary btnL" href="uploadImages.php?action=delete&id=<?=$image['id'];?>&image=<?=$image['image'];?>"><i class="ion-close-round"></i></a>
             </div>
         </div>
             
