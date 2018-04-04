@@ -27,4 +27,10 @@ class promoList{
         $db = null;
         
     }
+     public function toShow($toon){
+        $db = new Database();
+        $sql = "update promos set tonen = :toon where id = 1";
+        $db->executeWithParam ($sql, array(array(':toon', $toon)));
+        $db = null;
+     }
 }

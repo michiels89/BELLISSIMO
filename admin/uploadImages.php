@@ -38,6 +38,24 @@ if(isset($_POST['replace'])){
     }
     
 }
+$msg1="";
+//show promo or not
+if(isset($_GET['action']) && $_GET['action'] == 'show'){
+    
+    if(isset($_POST['yes']) && isset($_POST['no'])){
+        
+        $msg1= "kies ja OF nee";
+        
+    }elseif(isset($_POST['yes'])){
+        $promoList->toShow(1);
+        $msg1= "De promo wordt weergegeven";
+        
+    }elseif(isset($_POST['no'])){
+        $promoList->toShow(0);
+        $msg1= "De promo wordt niet meer weergegeven";
+    }
+    
+}
 
 // if upload button is clicked
 $msg2 = "";
@@ -100,7 +118,7 @@ if(isset($_GET['action']) && $_GET['action'] == "delete"){
         <div class="row">
             <div class="col"></div>
             <div class="col-4 text-center" id =" content">
-        <h1>Promo</h1>   
+        <h1>Promo aanpassen</h1>   
         <h3><?php echo $msg; ?></h3><br><br>
         <form action="uploadImages.php" method="post" enctype="multipart/form-data">
             <input type="hidden" name ="size" value="1000000">
@@ -114,9 +132,19 @@ if(isset($_GET['action']) && $_GET['action'] == "delete"){
             <div class="form-group">
                 <input type="submit" name="replace" value="Vervang promo">
             </div>
-        </form>   
+        </form> 
+         </div>
+            <div class="col-4 text-center">
+                <form action="uploadImages.php?action=show" method="post">
+                    <h1>Promo tonen?</h1>
+                    <h3><?php echo $msg1; ?></h3><br><br>
+                    <label for="yes">ja</label>
+                    <input type="checkbox" name="yes" id="yes">
+                    <label for="no">nee</label>
+                    <input type="checkbox" name="no" id="no">
+                    <input type="submit" value="Aanpassen">
+                </form> 
             </div>
-            <div class="col"></div>
         </div>
     </div> 
      <!-- PROMO-->
@@ -133,7 +161,7 @@ if(isset($_GET['action']) && $_GET['action'] == "delete"){
         <div class="row">
             <div class="col"></div>
             <div class="col-4 text-center" id =" content">
-       <h1>Foto's</h1>     
+       <h1>Foto's toevoegen/verwijderen</h1>     
        <h3><?php echo $msg2; ?></h3><br><br>
         <form action="uploadImages.php" method="post" enctype="multipart/form-data">
             <input type="hidden" name ="size" value="1000000">
