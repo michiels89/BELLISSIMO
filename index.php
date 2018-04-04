@@ -33,6 +33,8 @@
     <title>Bellissimo</title>
 </head>
 <body>
+    <?php 
+    if($promo["tonen"] == 1){?>
    <!---------------------------------------  POPUP PROMO------------>
   
    <!-- The Modal -->
@@ -72,6 +74,7 @@ window.onclick = function(event) {
     }
 }
 </script>
+<?php } ?>
 <?php require_once('include/head.php'); ?>
   <main>
    <h1 class="overOns"><strong>Over ons: </strong></h1><br>
