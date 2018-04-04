@@ -50,6 +50,24 @@ main{
 /**************************************POPUP PROMO*******************************************/
 
 /* The Modal (background) */
+.imgPromo{
+    height: 15rem;
+    width:15rem;
+
+    
+}
+.omschrijving{
+    display:inline-block;
+    width:70%;
+    padding-left: 2rem;
+    font-family: 'raleway';
+    padding-top:2rem;
+}
+.modal-content h1{
+    border: 2px solid black;
+    background-color: #a98357;
+
+}
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -68,17 +86,20 @@ main{
 .modal-content {
     background-color: #fefefe;
     margin: auto;
-    padding: 20px;
+    padding: 2rem;
     border: 1px solid #888;
     width: 80%;
 }
 
 /* The Close Button */
 .close {
-    color: #aaaaaa;
+    color: black !important;
     float: right;
-    font-size: 28px;
+    font-size: 4rem;
     font-weight: bold;
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+
 }
 
 .close:hover,
@@ -185,10 +206,12 @@ section{
     
 }
 .wrapperTreatment{
+/*
     display: -ms-grid;
     display: grid;
     -ms-grid-template-columns: 2fr 3fr 1fr ;
     grid-template-columns: 2fr 3fr 1fr ;
+*/
     font-size: 1.5rem;
     font-family: 'raleway';
 }
@@ -199,10 +222,20 @@ section{
     padding: 0.5rem;
     font-size: 100%;
     line-height: 2rem;
-    border-bottom: 2px solid black;
+    border-bottom: 2px dotted black;
+    padding-top: 2rem;
+}
+/*
+.box2{
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 100%;
+    line-height: 2rem;
+    border-bottom: 2px dotted black;
     padding-top: 2rem;
 
 }
+*/
 
 
 .colH{
@@ -211,6 +244,15 @@ section{
     font-size: 3rem;
     margin-top:1.5rem;
 
+}
+.col1{
+   width:25%; 
+}
+.col2{
+    width:55%;
+}
+.col3{
+    width:15%;
 }
 
 /*************************************IMAGE CAROUSEL******************************/

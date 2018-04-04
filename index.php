@@ -1,4 +1,8 @@
-
+<?php  require_once('admin/promoList.php'); 
+      $promoList= new promoList();
+      $promo = $promoList->getPromo();
+    ?>
+  
 <!DOCTYPE html>
 <html lang="nl-BE">
 <head>
@@ -29,21 +33,17 @@
     <title>Bellissimo</title>
 </head>
 <body>
-<?php require_once('include/head.php'); 
-      require_once('admin/promoList.php'); 
-      $promo= new promoList();
-    ?>
-  
-<!---------------------------------------  POPUP PROMO------------>
+   <!---------------------------------------  POPUP PROMO------------>
   
    <!-- The Modal -->
 <div id="myModal" class="modal">
 
-  <!-- Modal content -->
+<!--   Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <img src="<?php print($promo["foto"]);?>" alt="promo foto">
-    <p><?php print($promo["omschrijving"]);?></p>
+    <h1 class="text-center">Promo</h1>
+    <img class="imgPromo" src="files/<?php print($promo["foto"]);?>" alt="promo foto">
+    <p class="omschrijving"><?php print($promo["omschrijving"]);?></p>
   </div>
 
 </div>
@@ -72,8 +72,8 @@ window.onclick = function(event) {
     }
 }
 </script>
-  
-   <main>
+<?php require_once('include/head.php'); ?>
+  <main>
    <h1 class="overOns"><strong>Over ons: </strong></h1><br>
    <p class="overOns">Ik ben Nancy Volders en heb in 2018 <em><strong>Bellissimo</strong></em> opgericht te Averbode. Ik volgde verschillende opleidingen in manicure en nagelstyling.
 Bij <em><strong>Bellissimo</strong></em> staat de klant op de éérste plaats. Voor mij is het heel belangrijk dat de klant er goed uit ziet en zich goed voelt tijdens de behandeling. Het gebruik van professionele producten en een vlotte babbel staat hier garant voor.

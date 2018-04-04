@@ -187,6 +187,9 @@ label{
     grid-row-gap: 2rem;
     
 }
+.wrapperImg p{
+    padding:2rem;
+}
 .galeryImg{
     width: 35rem;
     height:30rem;

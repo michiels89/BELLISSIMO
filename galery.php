@@ -28,6 +28,7 @@ require_once('admin/ImageList.php');
     </head>
 
     <body>
+      
        <?php require_once('include/head.php'); ?>
        <main>
        <!---------------------------------Image CAROUSEL------------------------------------->
