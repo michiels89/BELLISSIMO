@@ -23,19 +23,21 @@ require_once('admin/TreatmentList.php');
     <?php require_once('include/head.php'); ?>
     <section>
         <div class="wrapperTreatment text-center">
+          <div class="row">
            <div class="box colH col1">Behandeling</div>
            <div class="box colH col2">Omschrijving</div>
-           <div class="box colH col3">Prijs</div>
+           <div class="box colH col3">Prijs</div></div>
        
        
         <?php
             $treat = new TreatmentList();
             $treatList = $treat->getAllTreatments();
             foreach($treatList as $treatment){
-            ?>    
+            ?>
+          <div class="row">    
            <div class="box col1"><strong><?=$treatment['naam'];?></strong></div>
            <div class="box col2"><?=$treatment['omschrijving'];?></div>
-           <div class="box col3">€ <?=$treatment['prijs'];?></div>
+           <div class="box col3">€ <?=$treatment['prijs'];?></div></div>
     <?php } ?>
         </div>
        

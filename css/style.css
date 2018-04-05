@@ -215,28 +215,18 @@ section{
     font-size: 1.5rem;
     font-family: 'raleway';
 }
-  
+.row{
+    
+    border-bottom: 2px solid black;
+}
 
 .box{
     display: inline-block;
     padding: 0.5rem;
     font-size: 100%;
     line-height: 2rem;
-    border-bottom: 2px dotted black;
     padding-top: 2rem;
 }
-/*
-.box2{
-    display: inline-block;
-    padding: 0.5rem;
-    font-size: 100%;
-    line-height: 2rem;
-    border-bottom: 2px dotted black;
-    padding-top: 2rem;
-
-}
-*/
-
 
 .colH{
 
